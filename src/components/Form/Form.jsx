@@ -18,7 +18,7 @@ const Form = () => {
       <div>
         <button>Autre moyen de Connexion</button>
       </div>
-      <Link className='Without_Connect' to="/home">Continuez sans se connecter</Link>
+      <Link className='Without_Connect' to="/">Continuez sans se connecter</Link>
     </div>
   );
 }
