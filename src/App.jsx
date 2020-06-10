@@ -7,7 +7,6 @@ import Map from './components/Map/Map';
 import {
   BrowserRouter as Router,
   Switch,
-  Link,
   Route
 } from 'react-router-dom';
 
