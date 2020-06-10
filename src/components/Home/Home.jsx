@@ -4,8 +4,13 @@ import { Link } from 'react-router-dom';
 const Home = () => {
 	return (
 		<div>
-			<div>Hello Home</div>
-			<Link to="/map">Lien Vers Map</Link>
+			<h1>TROTT</h1>
+			<div>
+				<Link to="/map">Lien Vers Map</Link>
+			</div>
+			<div>
+				<Link to="/form">Lien Vers Inscription</Link>
+			</div>
 		</div>
 	);
 }

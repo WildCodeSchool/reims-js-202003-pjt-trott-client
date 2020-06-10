@@ -1,0 +1,27 @@
+body {
+  height: 100vh;
+  background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
+}
+
+.Trott_Logo {
+  color: white;
+  font-size: 3rem;
+}
+
+.Enter_Number {
+  color: white;
+  font-size: 1.5rem;
+}
+
+p{
+  color: white;
+}
+
+button{
+  margin: 1rem;
+}
+
+.Without_Connect {
+  color: white;
+  text-decoration: none;
+}
