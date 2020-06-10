@@ -4,7 +4,7 @@ import './Form.css';
 
 const Form = () => {
   return (
-    <div>
+    <div className='Background_Form'>
       <h1 className='Trott_Logo'>TROTT</h1>
       <p className='Enter_Number'>Entre ton numéro de téléphone</p>
       <p>Puis rentre ton code de confirmation</p>
