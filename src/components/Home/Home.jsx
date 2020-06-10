@@ -7,7 +7,6 @@ const Home = () => {
 			<div>Hello Home</div>
 			<Link to="/map">Lien Vers Map</Link>
 		</div>
-
 	);
 }
 
