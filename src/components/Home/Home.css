@@ -1,0 +1,6 @@
+.logoDiv {
+  display: flex;
+  padding-top: 40vh;
+  padding-bottom: 40vh;
+  justify-content: center;
+}
