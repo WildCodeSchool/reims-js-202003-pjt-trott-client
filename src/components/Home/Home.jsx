@@ -1,18 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Home.css';
 
-const Home = () => {
-	return (
-		<div>
-			<h1>TROTT</h1>
-			<div>
-				<Link to="/map">Lien Vers Map</Link>
-			</div>
-			<div>
-				<Link to="/landingPage">Lien Vers Landing Page</Link>
-			</div>
-		</div>
-	);
-}
+const Home = () => (
+  <Link to="/map">
+    <figure className="logoDiv">
+      <img
+        src="https://www.zupimages.net/up/20/24/jw9z.png"
+        alt="logo Trott"
+        className="logo"
+      />
+    </figure>
+  </Link>
+);
 
 export default Home;

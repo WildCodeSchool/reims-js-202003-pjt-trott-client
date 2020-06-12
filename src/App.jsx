@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import Home from './components/Home/Home';
-import Map from './components/Map/Map';
 import LandingPage from './components/LandingPage/LandingPage';
+import MyMap from './components/Map/MyMap';
 import Form from './components/Form/Form';
 import Sms from './components/Sms_Verif/Sms_Verif';
 
@@ -22,7 +22,7 @@ function App() {
             <Home />
           </Route>
           <Route path="/map">
-            <Map />
+            <MyMap />
           </Route>
           <Route path="/landingPage">
             <LandingPage />
