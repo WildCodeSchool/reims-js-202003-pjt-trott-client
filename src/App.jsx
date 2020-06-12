@@ -25,10 +25,10 @@ function App() {
           <Route path="/map">
             <MyMap />
           </Route>
-          <Route path="/landingPage">
+          <Route path="/introduction">
             <LandingPage />
           </Route>
-          <Route path="/StartCreate">
+          <Route path="/register">
             <StartCreate />
           </Route>
           <Route path="/form">

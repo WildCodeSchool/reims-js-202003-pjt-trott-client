@@ -24,7 +24,7 @@ const StartCreate = () => (
       </p>
     </div>
     <figure className="imageConnect">
-      <img src="https://via.placeholder.com/250" alt="PlaceHolder" />
+      <img src="https://zupimages.net/up/20/24/wkww.png" alt="PlaceHolder" />
     </figure>
     <div className="buttonDiv">
       <Link to="/map">
