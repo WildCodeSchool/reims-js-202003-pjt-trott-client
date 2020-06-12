@@ -9,7 +9,7 @@ const Home = () => {
 				<Link to="/map">Lien Vers Map</Link>
 			</div>
 			<div>
-				<Link to="/form">Lien Vers Inscription</Link>
+				<Link to="/landingPage">Lien Vers Landing Page</Link>
 			</div>
 		</div>
 	);

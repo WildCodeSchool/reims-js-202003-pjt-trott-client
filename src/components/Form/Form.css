@@ -14,7 +14,11 @@
   font-size: 1.5rem;
 }
 
-p{
+.Input_tel {
+  margin: 3rem;
+}
+
+.Text_Form {
   color: white;
 }
 
@@ -25,4 +29,10 @@ button{
 .Without_Connect {
   color: white;
   text-decoration: none;
+}
+.Other_Connect{
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
