@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home = () => (
-  <Link to="/Introduction">
+  <Link to="/introduction">
     <figure className="logoDiv">
       <img
         src="https://www.zupimages.net/up/20/24/jw9z.png"
