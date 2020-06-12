@@ -1,5 +1,6 @@
 import React from 'react';
 import './StartCreate.css';
+import { Link } from 'react-router-dom';
 
 const StartCreate = () => (
   <div className="landing-page">
@@ -26,8 +27,10 @@ const StartCreate = () => (
       <img src="https://via.placeholder.com/250" alt="PlaceHolder" />
     </figure>
     <div className="buttonDiv">
-      <button type="button" className="button">Suivant</button>
-      <p className="pWconnect">continuer sans regarder</p>
+      <Link to="/map">
+        <button type="button" className="button">Suivant</button>
+      </Link>
+      <p className="pWconnect">continuer sans se connecter</p>
     </div>
   </div>
 );

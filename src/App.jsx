@@ -1,16 +1,17 @@
 import React from 'react';
 import './App.css';
-import Home from './components/Home/Home';
-import LandingPage from './components/LandingPage/LandingPage';
-import MyMap from './components/Map/MyMap';
-import Form from './components/Form/Form';
-import Sms from './components/Sms_Verif/Sms_Verif';
-
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
 } from 'react-router-dom';
+import Home from './components/Home/Home';
+import MyMap from './components/Map/MyMap';
+import Form from './components/Form/Form';
+import StartCreate from './components/Introduction/StartCreate';
+import Sms from './components/Sms_Verif/Sms_Verif';
+import LandingPage from './components/LandingPage/LandingPage';
+
 
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/landingPage">
             <LandingPage />
+          </Route>
+          <Route path="/StartCreate">
+            <StartCreate />
           </Route>
           <Route path="/form">
             <Form />
