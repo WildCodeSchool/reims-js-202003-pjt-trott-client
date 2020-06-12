@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
-
-import Home from './components/Home/Home';
-import MyMap from './components/Map/MyMap';
-import Form from './components/Form/Form';
-
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
 } from 'react-router-dom';
+import Home from './components/Home/Home';
+import MyMap from './components/Map/MyMap';
+import Form from './components/Form/Form';
+import StartCreate from './components/Introduction/StartCreate';
+
 
 
 function App() {
@@ -22,6 +22,9 @@ function App() {
           </Route>
           <Route path="/map">
             <MyMap />
+          </Route>
+          <Route path="/StartCreate">
+            <StartCreate />
           </Route>
           <Route path="/form">
             <Form />
