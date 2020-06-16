@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,11 +13,13 @@ import Sms from './components/Sms_Verif/Sms_Verif';
 import LandingPage from './components/LandingPage/LandingPage';
 
 
-import Rank from './components/Rank';
 import Home from './components/Home/Home';
-import Map from './components/Map/Map';
+import MyMap from './components/Map/MyMap';
 import Form from './components/Form/Form';
-
+import StartCreate from './components/Introduction/StartCreate';
+import Sms from './components/Sms_Verif/Sms_Verif';
+import LandingPage from './components/LandingPage/LandingPage';
+import Rank from './components/Rank';
 
 function App() {
   return (
@@ -27,10 +28,12 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
-            <Rank />
           </Route>
           <Route path="/map">
             <MyMap />
+          </Route>
+          <Route path="/rank">
+            <Rank />
           </Route>
           <Route path="/introduction">
             <LandingPage />
