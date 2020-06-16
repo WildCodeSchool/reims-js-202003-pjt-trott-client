@@ -5,6 +5,8 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+
+import ReactDOM from 'react-dom';
 import Home from './components/Home/Home';
 import MyMap from './components/Map/MyMap';
 import Form from './components/Form/Form';
@@ -12,6 +14,7 @@ import StartCreate from './components/Introduction/StartCreate';
 import Sms from './components/Sms_Verif/Sms_Verif';
 import LandingPage from './components/LandingPage/LandingPage';
 import Rank from './components/Rank';
+import Burger from './components/BurgerMenu/Menu';
 
 function App() {
   return (
@@ -22,6 +25,7 @@ function App() {
             <Home />
           </Route>
           <Route path="/map">
+            <Burger />
             <MyMap />
           </Route>
           <Route path="/rank">
@@ -44,5 +48,7 @@ function App() {
     </div>
   );
 }
+const rootElement = document.getElementById('root');
+ReactDOM.render(<App />, rootElement);
 
 export default App;
