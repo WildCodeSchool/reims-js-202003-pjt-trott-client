@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.body_rank {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
+  font-family: "Poppins";
+}
+
+.first_rank {
+  display: flex;
+  align-items: self-end;
+  justify-content: space-around;  
+}
+
+.round img{
+  box-sizing: border-box;
+  width: 87px;
+  height: 87px;
+  overflow: visible;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  background-image: url(/* mbappe.jpg */);
+  border: 3px solid #ffd500;
+}
+
+.round2 img{
+  box-sizing: border-box;
+  width: 72px;
+  height: 72px;
+  overflow: visible;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  background-image: url(/* mbappe.jpg */);
+  border: 3px solid #ffd500;
+}
+
+.user1_score {
+  width: auto;
+  height: 2vh;
+  background: linear-gradient(180deg, #ffab2e 0%, hsl(53, 100%, 50%) 100%);
+  border-radius: 19px;
+}
+
+.user2_score {
+  width: auto;
+  height: 2vh;
+  background: linear-gradient(215deg, #cccccc 0%, hsl(0, 0%, 80%) 100%);
+  border-radius: 19px;
+}
+
+.user3_score {
+  width: auto;
+  height: 2vh;
+  background: linear-gradient(84deg, #db8400 0%, hsl(26, 100%, 36%) 100%);
+  border-radius: 19px;
+}
+
+.round {
+  line-height: 1;
+}
+
+.round2 {
+  font-size: 11px;
+}
+
+.rank_info{
+  width: 90vw;
+  height: 5vh;
+  background-color: #ffffff;
+  border-radius: 39px;
+  margin-left: 1em;
+  line-height: 1.5;
+  color: black;
+}
+
+.rank_score {
+  width: 53px;
+  height: 24px;
+  background-color: rgba(217, 217, 217, 0.5);
+  border-radius: 19px;
+  float: right;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  color: black;
+}
+
+.other_ranks {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  color: white;
+}
+
+.text_rank {
+  color: #ffffff;
+}
+
+.button_rank {
+  width: 146px;
+  height: 40px;
+  overflow: hidden;
+  background: var(--Pure_White, #ffffff);
+  border-radius: 39px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins", serif;
+  color: #ff5757;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 1;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  margin-top: 7em;
+}
+
+.rank_info img{
+  float: left;
+  box-sizing: border-box;
+  width: 43px;
+  height: 41px;
+  overflow: visible;
+  border-radius: 50%;
+  background-image: url(/* mbappe.jpg */);
+}
+
