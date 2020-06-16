@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../Fonts/Poppins-SemiBold.ttf");
+}
+
+.Background_Sms {
+  height: 100vh;
+  background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
+  font-family: "Poppins";
+}
+
+.Enter_Sms-Container {
+  display: flex;
+  justify-content: center;
+}
+
+.Enter_Sms {
+  font-family: "Poppins_bolder";
+  font-size: 1.3rem;
+  text-align: start;
+  color: white;
+  width: 90vw;
+}
+
+.bar_Home {
+  background-color: white;
+  height: 5px;
+  border-radius: 3px;
+  border: none;
+  width: 40vw;
+}

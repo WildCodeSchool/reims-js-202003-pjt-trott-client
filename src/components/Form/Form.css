@@ -1,38 +1,117 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../Fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins_bolder";
+  src: url("../../Fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins_light";
+  src: url("../../Fonts/Poppins-ExtraLight.ttf");
+}
+
 .Background_Form {
   height: 100vh;
   background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.Trott_Logo {
-  margin: 0;
+.TrottForm_Logo {
+  width: 60vw;
   color: white;
-  font-size: 3rem;
+}
+
+.Text_Container {
+  width: 85vw;
+  margin-bottom: 2rem;
 }
 
 .Enter_Number {
-  color: white;
+  font-family: "Poppins_bolder";
   font-size: 1.5rem;
-}
-
-.Input_tel {
-  margin: 3rem;
+  text-align: start;
+  color: white;
 }
 
 .Text_Form {
   color: white;
+  text-align: start;
+  font-size: 0.95rem;
 }
 
-button{
-  margin: 1rem;
+.Input_Container {
+  width: 90vw;
+}
+
+.Input_Phone {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.Text_Form_Align {
+  font-family: "Poppins_light";
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hr{
+  background-color: white;
+  height: 2px;
+  border: none;
+}
+
+.next_link{
+  margin: 3rem;
+}
+
+.Other_Connect {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .Without_Connect {
   color: white;
   text-decoration: none;
+  font-size: 0.8rem;
 }
-.Other_Connect{
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+.link_as_button {
+  background-color: rgb(255, 255, 255);
+  border-radius: 39px;
+  color: #ff5757;
+  padding: 0.5rem 3rem;
+  text-decoration: none;
+}
+
+.link_as_button_Transparent {
+  border-radius: 39px;
+  border: solid white 1px;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+.bar_Without_Connect{
+  background-color: white;
+  height: 5px;
+  border-radius: 3px;
+  border: none;
+  width: 40vw;
 }

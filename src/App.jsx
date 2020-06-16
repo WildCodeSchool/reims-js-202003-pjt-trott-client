@@ -9,7 +9,7 @@ import Home from './components/Home/Home';
 import MyMap from './components/Map/MyMap';
 import Form from './components/Form/Form';
 import StartCreate from './components/Introduction/StartCreate';
-import Sms from './components/Sms_Verif/Sms_Verif';
+import Sms from './components/SmsVerif/SmsVerif';
 import LandingPage from './components/LandingPage/LandingPage';
 
 
@@ -31,10 +31,10 @@ function App() {
           <Route path="/register">
             <StartCreate />
           </Route>
-          <Route path="/form">
+          <Route path="/registerForm">
             <Form />
           </Route>
-          <Route path="/sms_de_verification">
+          <Route path="/SmsVerification">
             <Sms />
           </Route>
         </Switch>
