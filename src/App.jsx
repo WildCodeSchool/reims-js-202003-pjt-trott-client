@@ -5,6 +5,13 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import Home from './components/Home/Home';
+import MyMap from './components/Map/MyMap';
+import Form from './components/Form/Form';
+import StartCreate from './components/Introduction/StartCreate';
+import Sms from './components/Sms_Verif/Sms_Verif';
+import LandingPage from './components/LandingPage/LandingPage';
+
 
 import Home from './components/Home/Home';
 import MyMap from './components/Map/MyMap';
