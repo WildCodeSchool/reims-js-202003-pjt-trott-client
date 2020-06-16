@@ -1,15 +1,16 @@
 import React from 'react';
 import './App.css';
 
-import Home from './components/Home/Home';
-import Map from './components/Map/Map';
-import Form from './components/Form/Form';
-
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
 } from 'react-router-dom';
+
+import Rank from './components/Rank';
+import Home from './components/Home/Home';
+import Map from './components/Map/Map';
+import Form from './components/Form/Form';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+            <Rank />
           </Route>
           <Route path="/map">
             <Map />
