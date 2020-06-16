@@ -6,7 +6,6 @@ import {
   Route,
 } from 'react-router-dom';
 
-import ReactDOM from 'react-dom';
 import Home from './components/Home/Home';
 import MyMap from './components/Map/MyMap';
 import Form from './components/Form/Form';
@@ -48,7 +47,5 @@ function App() {
     </div>
   );
 }
-const rootElement = document.getElementById('root');
-ReactDOM.render(<App />, rootElement);
 
 export default App;
