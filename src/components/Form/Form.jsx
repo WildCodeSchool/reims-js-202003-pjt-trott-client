@@ -25,7 +25,7 @@ const Form = () => {
         <hr className='hr' />
       </div>
       <div className="next_link">
-        <Link className="link_as_button" to="/SmsVerification">Suivant</Link>
+        <Link className="link_as_button" to="/Sms">Suivant</Link>
       </div>
       <div className='Text_Form_Align'>
         <p>Nous allons t'envoyé un code de confirmation par sms</p>

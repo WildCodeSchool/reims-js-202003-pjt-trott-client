@@ -1,22 +1,9 @@
-@font-face {
-  font-family: "Poppins";
-  src: url("../../Fonts/Poppins-SemiBold.ttf");
-}
-
-@font-face {
-  font-family: "Poppins_bolder";
-  src: url("../../Fonts/Poppins-Bold.ttf");
-}
-
-@font-face {
-  font-family: "Poppins_light";
-  src: url("../../Fonts/Poppins-ExtraLight.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap');
 
 .Background_Form {
   height: 100vh;
   background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +21,7 @@
 }
 
 .Enter_Number {
-  font-family: "Poppins_bolder";
+  font-weight: bold;
   font-size: 1.5rem;
   text-align: start;
   color: white;
@@ -61,7 +48,7 @@
 }
 
 .Text_Form_Align {
-  font-family: "Poppins_light";
+  font-weight: 500;
   color: white;
   text-align: center;
   font-size: 1rem;

@@ -31,7 +31,7 @@ const StartCreate = () => (
         <button type="button" className="button">Suivant</button>
       </Link>
       <p className="pWconnect">continuer sans se connecter</p>
-      <Link to="/registerForm">
+      <Link to="/registerStep">
         <button type="button" className="button">Formulaire</button>
       </Link>
     </div>

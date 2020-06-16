@@ -1,12 +1,9 @@
-@font-face {
-  font-family: "Poppins";
-  src: url("../../Fonts/Poppins-SemiBold.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap');
 
 .Background_Sms {
   height: 100vh;
   background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
 }
 
 .Enter_Sms-Container {
@@ -15,7 +12,7 @@
 }
 
 .Enter_Sms {
-  font-family: "Poppins_bolder";
+  font-weight: 1000;
   font-size: 1.3rem;
   text-align: start;
   color: white;

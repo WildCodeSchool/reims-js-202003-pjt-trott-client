@@ -31,10 +31,10 @@ function App() {
           <Route path="/register">
             <StartCreate />
           </Route>
-          <Route path="/registerForm">
+          <Route path="/registerStep">
             <Form />
           </Route>
-          <Route path="/SmsVerification">
+          <Route path="/Sms">
             <Sms />
           </Route>
         </Switch>
