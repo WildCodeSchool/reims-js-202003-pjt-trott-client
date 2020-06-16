@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { Link } from 'react-router-dom';
+
 import './Rank.css';
 
 const Rank = () => (
@@ -61,7 +64,7 @@ const Rank = () => (
       </div>
     </div>
 
-    <div className="other_ranks">
+    <div className="other_ranks_3">
       4
       <div className="rank_info">
         <img src="https://via.placeholder.com/50" alt=" user" />
@@ -72,7 +75,7 @@ const Rank = () => (
       </div>
     </div>
 
-    <button className="button_rank" type="button">C'est Parti</button>
+    <Link className="button_rank" to="/register">C'est Parti</Link>
 
   </div>
 );
