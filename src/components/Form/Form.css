@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap');
-
 .Background_Form {
   height: 100vh;
   background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
@@ -43,7 +42,6 @@
   color: white;
 }
 
-
 ::-webkit-input-placeholder {
   color: rgb(255, 255, 255);
 }
@@ -53,16 +51,17 @@
   color: white;
   text-align: center;
   font-size: 1rem;
-  margin-bottom: 1rem;
 }
 
-.hr{
-  background-color: white;
-  height: 2px;
-  border: none;
+.Border_Phone {
+  border-bottom: solid 2px white;
 }
 
-.next_link{
+.Border_Continue {
+  border-bottom: solid 5px white;
+}
+
+.next_link {
   margin: 3rem;
 }
 
@@ -70,13 +69,12 @@
   height: 25vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .Without_Connect {
   color: white;
   text-decoration: none;
-  font-size: 0.8rem;
 }
 
 .link_as_button {
@@ -94,12 +92,4 @@
   text-decoration: none;
   font-size: 0.8rem;
   color: #ffffff;
-}
-
-.bar_Without_Connect{
-  background-color: white;
-  height: 5px;
-  border-radius: 3px;
-  border: none;
-  width: 40vw;
 }
