@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const StartCreate = () => {
   return (
     <div className="landing-page">
-      <figure>
+      <figure className="fig">
         <img
           src="https://cdn.discordapp.com/attachments/714501146701463636/720283550003363880/TROTT.png"
           className="logo"
@@ -18,7 +18,7 @@ const StartCreate = () => {
         <p className="pConnect">(ou te reconnecter)</p>
         <p className="pConnect">
           1 étape restante
-        <img
+          <img
             src="https://images.emojiterra.com/google/android-10/512px/1f609.png"
             className="smiley"
             alt="test"
