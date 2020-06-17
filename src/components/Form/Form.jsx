@@ -32,9 +32,9 @@ const Form = () => {
         <p>Nous allons t'envoyé un code de confirmation par sms</p>
       </div>
       <div className="Other_Connect">
-        <Link className="link_as_button_Transparent" to="/connectwithsocial">Autre moyen de Connexion</Link>
+        <Link className="link_as_button_Transparent" to="/register?step=4">Autre moyen de Connexion</Link>
         <div className='Border_Continue'>
-          <Link className='Without_Connect' to="/map">Continuez sans se connecter</Link>
+          <Link className='Without_Connect' to="/landingpage">Continuez sans se connecter</Link>
         </div>
       </div>
     </div>
