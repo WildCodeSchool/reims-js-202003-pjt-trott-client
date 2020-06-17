@@ -10,7 +10,7 @@ import Home from './components/Home/Home';
 import MyMap from './components/Map/MyMap';
 import RegisterForm from './components/Introduction/RegisterForm';
 import LandingPage from './components/LandingPage/LandingPage';
-import Rank from './components/Rank';
+import Rank from './components/Rank/Rank';
 import Burger from './components/BurgerMenu/Menu';
 
 
