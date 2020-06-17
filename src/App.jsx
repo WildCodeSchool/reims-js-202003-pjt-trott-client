@@ -8,12 +8,11 @@ import {
 
 import Home from './components/Home/Home';
 import MyMap from './components/Map/MyMap';
-import Form from './components/Form/Form';
-import StartCreate from './components/Introduction/StartCreate';
-import Sms from './components/SmsVerif/SmsVerif';
+import RegisterForm from './components/Introduction/RegisterForm';
 import LandingPage from './components/LandingPage/LandingPage';
 import Rank from './components/Rank';
 import Burger from './components/BurgerMenu/Menu';
+
 
 function App() {
   return (
@@ -34,13 +33,7 @@ function App() {
             <LandingPage />
           </Route>
           <Route path="/register">
-            <StartCreate />
-          </Route>
-          <Route path="/register?step=...">
-            <Form />
-          </Route>
-          <Route path="/Sms">
-            <Sms />
+            <RegisterForm/>
           </Route>
         </Switch>
       </Router>

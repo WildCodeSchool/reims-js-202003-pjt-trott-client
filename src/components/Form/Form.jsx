@@ -25,13 +25,13 @@ const Form = () => {
         <hr className='hr' />
       </div>
       <div className="next_link">
-        <Link className="link_as_button" to="/Sms">Suivant</Link>
+        <Link className="link_as_button" to="/register?step=3">Suivant</Link>
       </div>
       <div className='Text_Form_Align'>
         <p>Nous allons t'envoyé un code de confirmation par sms</p>
       </div>
       <div className="Other_Connect">
-        <Link className="link_as_button_Transparent" to="/ConnectWithSocial">Autre moyen de Connexion</Link>
+        <Link className="link_as_button_Transparent" to="/connectwithsocial">Autre moyen de Connexion</Link>
         <div>
           <Link className='Without_Connect' to="/map">Continuez sans se connecter</Link>
           <hr className='bar_Without_Connect' />
