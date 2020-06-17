@@ -21,7 +21,9 @@ const LandingPage = () => {
       <div className='Text_container margin_text'>
         <p className='Text_Form Text'>Filtre par type de vehicules, prix, marque, autonomie, distance,ect.</p>
       </div>
-      <Link className="link_as_button" to="/rank">Swipe</Link>
+      <div>
+        <Link className="link_as_button" to="/rank">Swipe</Link>
+      </div>
     </div>
   );
 }
