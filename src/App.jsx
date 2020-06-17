@@ -12,7 +12,7 @@ import Form from './components/Form/Form';
 import StartCreate from './components/Introduction/StartCreate';
 import Sms from './components/Sms_Verif/Sms_Verif';
 import LandingPage from './components/LandingPage/LandingPage';
-import Rank from './components/Rank';
+import Rank from './components/Rank/Rank';
 import Burger from './components/BurgerMenu/Menu';
 
 function App() {
