@@ -24,6 +24,7 @@ const LandingPage = () => {
       <div>
         <Link className="link_as_button" to="/register">Swipe</Link>
       </div>
+      <Link className="link_as_button" to="/rank">Swipe</Link>
     </div>
   );
 }
