@@ -16,12 +16,13 @@
 
 .Home_Title_container {
   width: 100vw;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .Flex_Title{
   max-width: 55vw;
-  display: flex;
-  justify-content: flex-end;
+  padding: 1rem;
 }
 
 .Home_Title {

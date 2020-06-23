@@ -36,7 +36,7 @@ function App() {
           <Route path="/register">
             <RegisterForm/>
           </Route>
-          <Route path="/landingpage">
+          <Route path="/home">
             <HomeLocation/>
           </Route>
         </Switch>
