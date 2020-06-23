@@ -21,8 +21,9 @@ const Form = () => {
         </p>
       </div>
       <div className="Input_Container">
-        <input type="number" className="Input_Phone" placeholder='Number Phone' />
-        <hr className='hr' />
+        <div className='Border_Phone'>
+          <input type="number" className="Input_Phone" placeholder='Number Phone' />
+        </div>
       </div>
       <div className="next_link">
         <Link className="link_as_button" to="/register?step=3">Suivant</Link>
@@ -32,9 +33,8 @@ const Form = () => {
       </div>
       <div className="Other_Connect">
         <Link className="link_as_button_Transparent" to="/connectwithsocial">Autre moyen de Connexion</Link>
-        <div>
+        <div className='Border_Continue'>
           <Link className='Without_Connect' to="/map">Continuez sans se connecter</Link>
-          <hr className='bar_Without_Connect' />
         </div>
       </div>
     </div>
