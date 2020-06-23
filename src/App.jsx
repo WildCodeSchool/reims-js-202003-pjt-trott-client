@@ -5,6 +5,8 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import { ApolloProvider } from '@apollo/react-hooks';
+import ApolloClient from 'apollo-boost';
 
 import Home from './components/Home/Home';
 import MyMap from './components/Map/MyMap';
@@ -14,6 +16,9 @@ import Rank from './components/Rank/Rank';
 import HomeLocation from './components/HomeLocation/HomeLocation';
 import Burger from './components/BurgerMenu/Menu';
 
+const client = new ApolloClient({
+  uri : 'http://flow-api.fluctuo.com/v1?access_token=g8bGqo424KsGKVRw8wxOZ7oGdWmM4lyL',
+});
 
 function App() {
   return (
@@ -24,8 +29,10 @@ function App() {
             <Home />
           </Route>
           <Route path="/map">
-            <Burger />
-            <MyMap />
+            <ApolloProvider client={client}>
+              <Burger />
+              <MyMap />
+            </ApolloProvider>
           </Route>
           <Route path="/rank">
             <Rank />

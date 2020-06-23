@@ -1,34 +1,86 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import 'leaflet/dist/leaflet.css';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import { gql } from 'apollo-boost';
+import { useQuery } from '@apollo/react-hooks';
+import L from 'leaflet';
 import './MyMap.css';
 
-class MyMap extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      lat: 44.8420873,
-      lng: -0.5754373,
-      zoom: 15,
-    };
-  }
+const myIcon = L.icon({
+  iconUrl: 'https://www.scafom-echafaudage.fr/wp-content/uploads/2018/10/marker_2-512.png',
+  iconSize: [60, 50],
+  iconAnchor: [12.5, 41],
+  popupAnchor: [0, -41],
+});
 
-  render() {
-    const position = [this.state.lat, this.state.lng];
-    return (
-      <Map className="map" center={position} zoom={this.state.zoom}>
-        <TileLayer
-          attribution='&amp;copy <a href="http://osm.org/copyright%22%3EOpenStreetMap</a> contributors'
-          url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={position}>
+const posMarker = [44.8420873, -0.5754373];
+const defaultFluctuoAPI = gql`
+{
+  vehicles (lat: ${posMarker[0]}, lng: ${posMarker[1]}) {
+    id
+    type
+    attributes
+    lat
+    lng
+    provider {
+      name
+    }
+  }
+}
+`;
+
+function MyMap() {
+
+  const [lat, setLat] = useState(44.8420873);
+  const [lng, setLng] = useState(-0.5754373);
+  const [zoom, setZoom] = useState(18);
+  const [fluctuoAPI, setFluctuoAPI] = useState(defaultFluctuoAPI);
+
+  const position = [lat,lng];
+  const { loading, error, data } = useQuery(fluctuoAPI);
+
+  useEffect(() => {
+    const posMarker = [44.8420873,-0.5754373];
+    const fluctuoAPI = gql`
+    {
+      vehicles (lat: ${posMarker[0]}, lng: ${posMarker[1]}) {
+        id
+        type
+        attributes
+        lat
+        lng
+        provider {
+          name
+        }
+      }
+    }
+    `;
+    setFluctuoAPI(fluctuoAPI);
+  }, []);
+  useEffect(() => {
+    console.log(data);
+  }, [data]);
+
+  return (
+    <Map className="map" center={position} zoom="18"/*zoom={zoom}*/ onViewportChange={(viewport) => { setLat(viewport.center[0]); setLng(viewport.center[1])}}>
+      <TileLayer
+        attribution='&amp;copy <a href="http://osm.org/copyright%22%3EOpenStreetMap">Toto</a> contributors'
+        url="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      {data && data.vehicles.map((vehicle) => (
+        <Marker position={[vehicle.lat, vehicle.lng]} icon={myIcon} data={data}>
           <Popup>
             You are here
           </Popup>
         </Marker>
-      </Map>
-    );
-  }
+      ))}
+      <Marker position={posMarker} icon={myIcon} data={data}>
+        <Popup>
+          You are here
+        </Popup>
+      </Marker>
+    </Map>
+  );
 }
 
 export default MyMap;
