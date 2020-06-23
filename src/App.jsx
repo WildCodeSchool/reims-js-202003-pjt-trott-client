@@ -11,6 +11,7 @@ import MyMap from './components/Map/MyMap';
 import RegisterForm from './components/Introduction/RegisterForm';
 import LandingPage from './components/LandingPage/LandingPage';
 import Rank from './components/Rank/Rank';
+import HomeLocation from './components/HomeLocation/HomeLocation';
 import Burger from './components/BurgerMenu/Menu';
 
 
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route path="/register">
             <RegisterForm/>
+          </Route>
+          <Route path="/home">
+            <HomeLocation/>
           </Route>
         </Switch>
       </Router>

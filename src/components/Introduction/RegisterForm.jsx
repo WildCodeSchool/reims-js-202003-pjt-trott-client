@@ -2,6 +2,7 @@ import React from 'react';
 import StartCreate from './StartCreate';
 import Form from '../Form/Form';
 import SmsVerif from '../SmsVerif/SmsVerif';
+import SocialRegister from './SocialRegister';
 import { useLocation } from 'react-router-dom';
 
 
@@ -28,6 +29,10 @@ function RegisterForm() {
     case 3:
       return (
         <SmsVerif />
+      );
+    case 4:
+      return (
+        <SocialRegister />
       );
     default:
       return (
