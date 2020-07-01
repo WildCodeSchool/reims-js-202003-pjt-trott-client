@@ -11,6 +11,7 @@ import ApolloClient from 'apollo-boost';
 import Home from './components/Home/Home';
 import MyMap from './components/Map/MyMap';
 import RegisterForm from './components/Introduction/RegisterForm';
+import Register from './components/Register/Register';
 import LandingPage from './components/LandingPage/LandingPage';
 import Rank from './components/Rank/Rank';
 import HomeLocation from './components/HomeLocation/HomeLocation';
@@ -41,7 +42,7 @@ function App() {
             <LandingPage />
           </Route>
           <Route path="/register">
-            <RegisterForm/>
+            <Register/>
           </Route>
           <Route path="/home">
             <HomeLocation/>
