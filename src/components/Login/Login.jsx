@@ -23,9 +23,9 @@ class Login extends React.Component {
     const url = 'http://localhost:8000/users/';
     axios.post(url, this.state)
       .then((res) => res.data)
-      .catch = () => {
-        alert(`Vos informations sont incorrectes`);
-      };
+      .catch(() => {
+        alert('Vos informations sont incorrectes');
+      });
   }
 
   render() {
