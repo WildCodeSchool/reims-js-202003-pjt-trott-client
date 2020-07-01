@@ -10,6 +10,7 @@
     "apollo-boost": "^0.4.9",
     "graphql": "^15.1.0",
     "leaflet": "^1.6.0",
+    "mapbox-gl": "^1.11.0",
     "react": "^16.13.1",
     "react-burger-menu": "^2.6.15",
     "react-dom": "^16.13.1",
