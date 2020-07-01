@@ -20,7 +20,7 @@ class Login extends React.Component {
 
   submitForm(e) {
     e.preventDefault();
-    const url = 'http://localhost:8000/users/';
+    const url = 'http://localhost:8000/login/';
     axios.post(url, this.state)
       .then((res) => res.data)
       .catch(() => {
