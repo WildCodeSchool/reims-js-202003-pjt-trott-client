@@ -15,6 +15,7 @@ import LandingPage from './components/LandingPage/LandingPage';
 import Rank from './components/Rank/Rank';
 import HomeLocation from './components/HomeLocation/HomeLocation';
 import Burger from './components/BurgerMenu/Menu';
+import Login from './components/Login/Login';
 
 const client = new ApolloClient({
   uri : 'http://flow-api.fluctuo.com/v1?access_token=g8bGqo424KsGKVRw8wxOZ7oGdWmM4lyL',
@@ -41,10 +42,13 @@ function App() {
             <LandingPage />
           </Route>
           <Route path="/register">
-            <RegisterForm/>
+            <RegisterForm />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/home">
-            <HomeLocation/>
+            <HomeLocation />
           </Route>
         </Switch>
       </Router>
