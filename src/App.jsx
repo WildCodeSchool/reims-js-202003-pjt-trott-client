@@ -5,20 +5,12 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import { ApolloProvider } from '@apollo/react-hooks';
-import ApolloClient from 'apollo-boost';
 
 import Home from './components/Home/Home';
-import MyMap from './components/Map/MyMap';
-import RegisterForm from './components/Introduction/RegisterForm';
-import LandingPage from './components/LandingPage/LandingPage';
-import Rank from './components/Rank/Rank';
-import HomeLocation from './components/HomeLocation/HomeLocation';
-import Burger from './components/BurgerMenu/Menu';
-
-const client = new ApolloClient({
-  uri : 'http://flow-api.fluctuo.com/v1?access_token=g8bGqo424KsGKVRw8wxOZ7oGdWmM4lyL',
-});
+import InstructionsIndex from './components/Instructions/InstructionsIndex';
+import RegisterIndex from './components/Register/RegisterIndex';
+import Login from './components/Login/Login';
+import TrottIndex from './components/TrottMap/TrottIndex';
 
 function App() {
   return (
@@ -28,23 +20,21 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/map">
-            <ApolloProvider client={client}>
-              <Burger />
-              <MyMap />
-            </ApolloProvider>
+
+          <Route path="/instructions">
+            <InstructionsIndex />
           </Route>
-          <Route path="/rank">
-            <Rank />
-          </Route>
-          <Route path="/introduction">
-            <LandingPage />
-          </Route>
+
           <Route path="/register">
-            <RegisterForm/>
+            <RegisterIndex />
           </Route>
-          <Route path="/home">
-            <HomeLocation/>
+
+          <Route path="/login">
+            <Login />
+          </Route>
+
+          <Route path="/trott">
+            <TrottIndex />
           </Route>
         </Switch>
       </Router>

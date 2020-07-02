@@ -1,12 +1,12 @@
 import React from 'react';
-import './LandingPage.css';
 import { Link } from 'react-router-dom';
-import trott from '../../Image/TROTT.png'
-import Mob from '../../Image/1.png'
-import trot from '../../Image/2.png'
-import Bike from '../../Image/3.png'
 
-const LandingPage = () => {
+import trott from '../../Image/TROTT.png';
+import Mob from '../../Image/1.png';
+import trot from '../../Image/2.png';
+import Bike from '../../Image/3.png';
+
+const InstruPageOne = () => {
   return (
     <div className='Background_Landing'>
       <img className='TrottLanding_Logo' src={trott} alt="LOGO" />
@@ -22,10 +22,10 @@ const LandingPage = () => {
         <p className='Text_Form Text'>Filtre par type de vehicules, prix, marque, autonomie, distance,ect.</p>
       </div>
       <div>
-        <Link className="link_as_button" to="/rank">Swipe</Link>
+        <Link className="link_as_button" to="/instructions?page=2">Swipe</Link>
       </div>
     </div>
   );
 }
 
-export default LandingPage;
+export default InstruPageOne;

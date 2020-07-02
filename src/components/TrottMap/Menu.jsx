@@ -1,6 +1,6 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
-import './Menu.css';
+
 import User from '../../Image/user.png';
 import Gift from '../../Image/gift.png';
 

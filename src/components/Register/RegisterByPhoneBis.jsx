@@ -1,7 +1,6 @@
 import React from 'react';
-import './SmsVerif.css';
 
-const Sms = () => {
+const RegisterByPhoneBis = () => {
   return (
     <div className='Background_Sms'>
       <div>
@@ -18,4 +17,4 @@ const Sms = () => {
   );
 }
 
-export default Sms;
+export default RegisterByPhoneBis;

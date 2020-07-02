@@ -1,9 +1,7 @@
 import React from 'react';
-import './StartCreate.css';
 import { Link } from 'react-router-dom';
 
-
-const StartCreate = () => {
+const RegisterPageOne = () => {
   return (
     <div className="landing-page">
       <figure className="fig">
@@ -29,14 +27,17 @@ const StartCreate = () => {
         <img src="https://zupimages.net/up/20/24/wkww.png" alt="PlaceHolder" />
       </figure>
       <div className="buttonDiv">
-        <Link to="/register?step=2">
-          <button type="button" className="button">Suivant</button>
+        <Link className="link_as_button" to="/register?step=2">
+          S'inscrire
         </Link>
-        <p className="pWconnect">continuer sans se connecter</p>
+        <Link className="link_as_button" to="/login">
+          Se connecter
+        </Link>
+        <p className="pWconnect">Continuer sans se connecter</p>
       </div>
     </div>
   );
 }
 
 
-export default StartCreate;
+export default RegisterPageOne;
