@@ -12,7 +12,7 @@ const myIcon = L.icon({
   popupAnchor: [0, -41],
 });
 
-const posMarker = [44.8420873, -0.5754373];
+const posMarker = [48.866667, 2.333333];
 const defaultFluctuoAPI = gql`
 {
   vehicles (lat: ${posMarker[0]}, lng: ${posMarker[1]}) {
@@ -29,8 +29,8 @@ const defaultFluctuoAPI = gql`
 `;
 
 function MyMap() {
-  const [lat, setLat] = useState(44.8420873);
-  const [lng, setLng] = useState(-0.5754373);
+  const [lat, setLat] = useState(48.866667);
+  const [lng, setLng] = useState(2.333333);
   /* const [zoom, setZoom] = useState(18); */
   const [fluctuoAPI, setFluctuoAPI] = useState(defaultFluctuoAPI);
 
@@ -38,7 +38,7 @@ function MyMap() {
   const { data } = useQuery(fluctuoAPI);
 
   useEffect(() => {
-    const posMarker = [44.8420873, -0.5754373];
+    const posMarker = [48.866667, 2.333333];
     const fluctuoAPI = gql`
     {
       vehicles (lat: ${posMarker[0]}, lng: ${posMarker[1]}) {
