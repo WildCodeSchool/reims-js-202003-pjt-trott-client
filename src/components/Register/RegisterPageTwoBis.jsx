@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./SocialRegister.css";
 
-const SocialRegister = () => {
+const RegisterPageTwoBis = () => {
   return (
     <div className="Background_Form">
       <div>
@@ -16,6 +15,9 @@ const SocialRegister = () => {
         <p className="Text">Autres Methodes de Connexion</p>
       </div>
       <div className="Btn_Social_Container">
+        <Link to="/register?step=4" className="link_as_button1">
+          Continue with SMS
+        </Link>
         <Link to="/" className="link_as_button1">
           Continue with Facebook
         </Link>
@@ -30,4 +32,4 @@ const SocialRegister = () => {
   );
 };
 
-export default SocialRegister;
+export default RegisterPageTwoBis;

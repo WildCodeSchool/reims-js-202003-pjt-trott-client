@@ -1,11 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-
 import { Link } from 'react-router-dom';
 
-import './Rank.css';
-
-const Rank = () => (
+const InstruPageTwo = () => (
   <div className="body_rank">
     <p className="text_rank">
       Rejoins la communauté et monte dans le classement pour obtenir des courses gratuites
@@ -81,4 +78,4 @@ const Rank = () => (
   </div>
 );
 
-export default Rank;
+export default InstruPageTwo;

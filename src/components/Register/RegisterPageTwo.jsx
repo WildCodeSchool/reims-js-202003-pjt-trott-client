@@ -2,9 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-import './Register.css';
-
-class Register extends React.Component {
+class RegisterPageTwo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -40,11 +38,15 @@ class Register extends React.Component {
   render() {
     return (
       <div className="body_register">
-        <h1>Ajout d'un nouvel utilisateur</h1>
+        <img
+          src="https://cdn.discordapp.com/attachments/714501146701463636/720283550003363880/TROTT.png"
+          className="logo"
+          alt="logo"
+        />
 
         <form onSubmit={this.submitForm}>
           <fieldset>
-            <legend>Vos Informations</legend>
+            <legend>Par email</legend>
             <div>
               <label htmlFor="username">Nom d'utilisateur</label>
               <input
@@ -81,13 +83,20 @@ class Register extends React.Component {
             <hr />
 
             <div>
-              <input type="submit" value="Envoyer" />
+              <input className="link_as_button" type="submit" value="Envoyer" />
             </div>
           </fieldset>
         </form>
+
+        <div className="Other_Connect">
+          <Link className="link_as_button_Transparent" to="/register?step=3">Autre moyen de Connexion</Link>
+          <div>
+            <Link className="Without_Connect" to="/trott">Continuez sans se connecter</Link>
+          </div>
+        </div>
       </div>
     );
   }
 }
 
-export default Register;
+export default RegisterPageTwo;

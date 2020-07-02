@@ -4,7 +4,6 @@ import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 import { gql } from 'apollo-boost';
 import { useQuery } from '@apollo/react-hooks';
 import L from 'leaflet';
-import './MyMap.css';
 
 const myIcon = L.icon({
   iconUrl: 'https://www.scafom-echafaudage.fr/wp-content/uploads/2018/10/marker_2-512.png',
