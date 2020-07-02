@@ -1,0 +1,12 @@
+.userIcon{
+  max-height: 2rem;
+}
+
+.ElementBaseline{
+  display: flex;
+  margin-left: 15%;
+}
+
+.paragraphBaseline{
+  margin-left: 15%;
+}
