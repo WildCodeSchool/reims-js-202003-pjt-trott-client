@@ -83,7 +83,6 @@
 
 .bm-item {
   display: inline-block;
-
   /* Our sidebar item styling */
   text-decoration: none;
   margin-bottom: 10px;
@@ -97,10 +96,10 @@
 
 .bm-burger-button {
   position: absolute;
-  width: 36px;
-  height: 30px;
-  left: 10px;
-  bottom: 10px;
+  width: 45px;
+  height: 45px;
+  left: 35px;
+  bottom: 55px;
 }
 
 /* Color/shape of burger icon bars */
