@@ -2,12 +2,9 @@
 /* ------------------------------ TROTT - Page CITY -------------------------- */
 /* --------------------------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap');
-
-.Background_Home_Location {
-  font-family: sans-serif;
+.bg_mycity {
   text-align: center;
-  background-image: url("https://zupimages.net/up/20/25/3l4c.png");
+  background-image: url("https://i.pinimg.com/originals/26/ea/fc/26eafc0b14488fea03fa8fa9751203ff.jpg");
   background-size: cover;
 }
 
@@ -79,11 +76,8 @@
 /* ----------------------------- TROTT - Menu Burger ------------------------- */
 /* --------------------------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
-
 .bm-item {
   display: inline-block;
-
   /* Our sidebar item styling */
   text-decoration: none;
   margin-bottom: 10px;
@@ -97,10 +91,10 @@
 
 .bm-burger-button {
   position: absolute;
-  width: 36px;
-  height: 30px;
-  left: 10px;
-  bottom: 10px;
+  width: 45px;
+  height: 45px;
+  left: 35px;
+  bottom: 55px;
 }
 
 /* Color/shape of burger icon bars */
@@ -219,4 +213,41 @@
 
 .map {
   height: 100vh;
+}
+
+.ScanLogo{
+  position: absolute;
+  top: 700px; left: 145px;
+  margin: auto;
+  z-index: 1001;
+}
+
+.Text_Scan {
+  font-family: "Poppins";
+  font-weight: 1000;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.Text_Scan:link {
+  text-decoration: none;
+}
+
+.Text_Scan:visited {
+  text-decoration: none;
+}
+
+.Text_Scan:active {
+  text-decoration: none;
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* ---------------------------- TROTT - Interface SCAN ------------------------ */
+/* --------------------------------------------------------------------------- */
+
+.Background_Scan {
+  height: 100vh;
+  background-image: url(../../Image/qrcode.png);
 }

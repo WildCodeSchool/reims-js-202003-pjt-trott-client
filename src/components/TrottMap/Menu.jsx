@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom';
 
 import User from '../../Image/user.png';
 import Gift from '../../Image/gift.png';
+import BurgerMenu from '../../Image/menu.png';
 
 function Burger() {
   // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
   return (
-    <Menu width="100vw" className="size">
+    <Menu width="100vw" customBurgerIcon={<img src={BurgerMenu} alt="icon" />} className="size">
       <div className="menu_infos">
         <div className="menu_flex">
           <div className="menu_info_1">
