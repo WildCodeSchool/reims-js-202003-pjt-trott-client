@@ -2,10 +2,7 @@
 /* ------------------------------ TROTT - Page CITY -------------------------- */
 /* --------------------------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap');
-
-.Background_Home_Location {
-  font-family: sans-serif;
+.bg_mycity {
   text-align: center;
   background-image: url("https://zupimages.net/up/20/25/3l4c.png");
   background-size: cover;
@@ -78,8 +75,6 @@
 /* --------------------------------------------------------------------------- */
 /* ----------------------------- TROTT - Menu Burger ------------------------- */
 /* --------------------------------------------------------------------------- */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 .bm-item {
   display: inline-block;

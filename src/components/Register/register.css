@@ -2,9 +2,11 @@
 /* ----------------------------- Register - Page ONE ------------------------- */
 /* --------------------------------------------------------------------------- */
 
-.landing-page {
-  height: 100vh;
-  background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
+.bg_registerPageOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .fig{margin-top: 0;}
@@ -63,7 +65,7 @@
 }
 
 .imageConnect{
-  margin-bottom: 0;
+  margin-bottom: 5vh;
 }
 
 .pWconnect {
@@ -72,30 +74,25 @@
   text-align: center;
   margin-bottom: 0;
   padding-bottom: 2%;
+  margin-top: 5px;
 }
 
+.block_register_linkButton {
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
 /* --------------------------------------------------------------------------- */
 /* ----------------------------- Register - Page TWO ------------------------- */
 /* --------------------------------------------------------------------------- */
-
-.body_register {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
-  font-family: "Poppins";
-}
 
 /* --------------------------------------------------------------------------- */
 /* ---------------------------- Register - Page TWO BIS ---------------------- */
 /* --------------------------------------------------------------------------- */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap");
-
 .Background_Form {
-  height: 100vh;
-  background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
-  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,11 +149,7 @@
 /* ----------------------------- Register - BY PHONE ------------------------- */
 /* --------------------------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap');
 .Background_Form {
-  height: 100vh;
-  background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
-  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,7 +173,7 @@
   color: white;
 }
 
-.Text_Form {
+.Text_Form_test {
   color: white;
   text-align: start;
   font-size: 0.95rem;
@@ -251,14 +244,6 @@
 /* --------------------------------------------------------------------------- */
 /* --------------------------- Register - BY PHONE BIS ----------------------- */
 /* --------------------------------------------------------------------------- */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;700&display=swap');
-
-.Background_Sms {
-  height: 100vh;
-  background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
-  font-family: 'Poppins', sans-serif;
-}
 
 .Enter_Sms-Container {
   display: flex;
