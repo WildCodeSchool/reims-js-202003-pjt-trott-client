@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './Login.css';
 
 class Login extends React.Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class Login extends React.Component {
 
   submitForm(e) {
     e.preventDefault();
-    const url = 'http://localhost:8000/login/';
+    const url = 'http://localhost:8000/login';
     axios.post(url, this.state)
       .then((res) => res.data)
       .catch(() => {
@@ -31,14 +32,26 @@ class Login extends React.Component {
   render() {
     return (
       <div className="loginDiv">
-        <h1>Connexion utilisateur</h1>
+        <div>
+          <img
+            src="https://cdn.discordapp.com/attachments/714501146701463636/720283550003363880/TROTT.png"
+            className="logo"
+            alt="logo"
+          />
+        </div>
+
+        <h1 className="title">Connexion utilisateur</h1>
         <form>
+          <div className="inputDiv">
+            <label className="label" htmlFor="user">username</label>
+            <input className="input" type="text" id="user" name="username" onChange={this.onChange} value={this.state.username} />
+          </div>
+          <div className="inputDiv">
+            <label className="label" htmlFor="user">password</label>
+            <input className="input" type="password" id="user" name="password" onChange={this.onChange} value={this.state.password} />
+          </div>
           <div>
-            <label htmlFor="user">username</label>
-            <input type="text" id="user" name="username" onChange={this.onChange} value={this.state.username} />
-            <label htmlFor="user">password</label>
-            <input type="text" id="user" name="password" onChange={this.onChange} value={this.state.password} />
-            <input type="submit" value="Connexion" />
+            <input className="connexionInput" type="submit" value="Connexion" />
           </div>
         </form>
       </div>

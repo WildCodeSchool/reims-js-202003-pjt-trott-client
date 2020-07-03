@@ -22,7 +22,7 @@ class RegisterPageTwo extends React.Component {
 
   submitForm(e) {
     e.preventDefault();
-    const url = 'http://localhost:8000/api/register';
+    const url = 'http://localhost:8000/register';
     axios.post(url, this.state)
       .then(res => res.data)
       .then(res => {
@@ -72,7 +72,7 @@ class RegisterPageTwo extends React.Component {
             <div>
               <label htmlFor="password">Password</label>
               <input
-                type="text"
+                type="password"
                 id="password"
                 name="password"
                 onChange={this.onChange}
