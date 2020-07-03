@@ -184,6 +184,11 @@
   padding-top: 0.5em;
 }
 
+.linkdeco{
+  text-decoration: none;
+  color: inherit;
+}
+
 .user_list img{
   margin-right: 1em;
 }
