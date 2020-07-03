@@ -8,7 +8,7 @@ const MyCity = () => {
       <div className="Page_Container">
         <div className="Home_Title_container">
           <div className="Flex_Title">
-            <h1 className="Home_Title">Bienvenue à Bordeaux !</h1>
+            <h1 className="Home_Title">Bienvenue à Paris !</h1>
           </div>
         </div>
         <div className="Logo_Container">
