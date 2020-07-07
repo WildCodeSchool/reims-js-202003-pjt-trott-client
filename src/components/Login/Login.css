@@ -25,7 +25,7 @@
   align-self: center;
   margin-bottom: 5%;
   border-radius: 12px;
-  /*border: 0.16rem solid black;*/
+  border: 0.16rem solid black;
   text-align: center;
   padding: 0.4rem;
   transition: all 0.2s;  
@@ -41,6 +41,7 @@
   font-size: 1.3rem;
   align-self: center;
 }
+
 
 .connexionInput{
   display: flex;

@@ -30,7 +30,7 @@ const RegisterPageOne = () => {
         <Link className="link_button_register" to="/register?step=2">
           S'inscrire
         </Link>
-        <Link className="link_button" to="/login">
+        <Link className="link_button_register" to="/login">
           Se connecter
         </Link>
         <Link className="pWconnect" to="/trott">
