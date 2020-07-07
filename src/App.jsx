@@ -14,7 +14,7 @@ import TrottIndex from './components/TrottMap/TrottIndex';
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg_app">
       <Router>
         <Switch>
           <Route exact path="/">

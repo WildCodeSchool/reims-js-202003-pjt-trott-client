@@ -1,15 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import trott from '../../Image/TROTT.png';
 
 const Home = () => (
   <Link to="/instructions">
     <figure className="logoDiv">
-      <img
-        src="https://www.zupimages.net/up/20/24/jw9z.png"
-        alt="logo Trott"
-        className="logo"
-      />
+      <img src={trott} alt="LOGO" />
     </figure>
   </Link>
 );

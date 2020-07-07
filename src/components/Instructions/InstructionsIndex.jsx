@@ -11,8 +11,8 @@ function useQuery() {
 }
 
 function InstructionsIndex() {
-  let query = useQuery();
-  let page = parseInt(query.get("page"));
+  const query = useQuery();
+  let page = parseInt(query.get('page'));
   if (isNaN(page)) {
     page = 1;
   }

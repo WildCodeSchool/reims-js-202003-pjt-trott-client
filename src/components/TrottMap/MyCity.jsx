@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const MyCity = () => {
   return (
-    <div className="Background_Home_Location">
+    <div className="bg_mycity">
       <div className="Page_Container">
         <div className="Home_Title_container">
           <div className="Flex_Title">
