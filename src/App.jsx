@@ -11,6 +11,7 @@ import InstructionsIndex from './components/Instructions/InstructionsIndex';
 import RegisterIndex from './components/Register/RegisterIndex';
 import Login from './components/Login/Login';
 import TrottIndex from './components/TrottMap/TrottIndex';
+import Scan from './components/TrottMap/Scan'
 
 function App() {
   return (
@@ -36,6 +37,11 @@ function App() {
           <Route path="/trott">
             <TrottIndex />
           </Route>
+
+          <Route path="/scan">
+            <Scan />
+          </Route>
+
         </Switch>
       </Router>
     </div>

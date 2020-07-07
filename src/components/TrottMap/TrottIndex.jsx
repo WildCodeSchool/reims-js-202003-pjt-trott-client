@@ -6,6 +6,7 @@ import ApolloClient from 'apollo-boost';
 import MyCity from './MyCity';
 import Burger from './Menu';
 import MyMap from './MyMap';
+import ScanLink from './ScanLink';
 
 import './trott.css';
 
@@ -32,6 +33,7 @@ function TrottIndex() {
     case 2:
       return (
         <ApolloProvider client={client}>
+          <ScanLink/>
           <Burger />
           <MyMap />
         </ApolloProvider>
