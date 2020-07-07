@@ -38,7 +38,7 @@ function App() {
             <TrottIndex />
           </Route>
 
-          <Route path="/Scan">
+          <Route path="/scan">
             <Scan />
           </Route>
 

@@ -7,7 +7,7 @@ const ScanLink = () => {
   return (
     <div className='ScanLogo'>
       <Link to="/scan" >
-        <img src={ScanLogo} alt="Scan" />
+        <img src={ScanLogo} alt="scan" />
         <p className='Text_Scan'>Scan</p>
       </Link>
     </div>
