@@ -39,10 +39,10 @@ function App() {
             <TrottIndex />
           </Route>
 
-          <Route path="/map/Menu">
+          <Route path="/map/menu">
             <Menu />
           </Route>
-          <Route path="/Scan">
+          <Route path="/scan">
             <Scan />
           </Route>
 
