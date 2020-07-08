@@ -30,7 +30,7 @@ function Burger() {
           </div>
         </div>
         <div className="user_list">
-          <Link className="linkdeco" to="/map/Menu">
+          <Link className="linkdeco" to="/map/menu">
             <img src={User} alt="user" />
             Mon compte
           </Link>

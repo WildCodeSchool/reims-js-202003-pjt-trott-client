@@ -62,7 +62,7 @@ function MyMap() {
   }, [data]);
 
   return (
-    <Map className="map" center={position} zoom="16"/* onViewportChange={(viewport) => { setLat(viewport.center[0]); setLng(viewport.center[1]); }} */>
+    <Map className="map" center={position} zoom="16">
       <TileLayer
         attribution="© <a href='https://www.mapbox.com/about/maps/%27%3EMapbox</a> © <a href='http://www.openstreetmap.org/copyright%27%3EOpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>"
         url="https://api.mapbox.com/styles/v1/brianlag/ckbrnsqyh327j1iloa35gzxos/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYnJpYW5sYWciLCJhIjoiY2ticmx5anhtMnhzMjJ4bDluM2N3dzJxMSJ9.3ynE8Sf5t0N7PdHaZukyDw"
