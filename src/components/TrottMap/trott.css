@@ -46,7 +46,6 @@
   color: #ffffff;
   padding: 0.7rem 2rem;
   font-size: 1.3rem;
-
 }
 
 .Button_Container {
@@ -178,12 +177,12 @@
   padding-top: 0.5em;
 }
 
-.linkdeco{
+.linkdeco {
   text-decoration: none;
   color: inherit;
 }
 
-.user_list img{
+.user_list img {
   margin-right: 1em;
 }
 
@@ -215,9 +214,10 @@
   height: 100vh;
 }
 
-.ScanLogo{
+.ScanLogo {
   position: absolute;
-  top: 700px; left: 145px;
+  top: 700px;
+  left: 145px;
   margin: auto;
   z-index: 1001;
 }
@@ -242,12 +242,51 @@
   text-decoration: none;
 }
 
-
 /* --------------------------------------------------------------------------- */
 /* ---------------------------- TROTT - Interface SCAN ------------------------ */
 /* --------------------------------------------------------------------------- */
 
-.Background_Scan {
+
+.Bg_QrCode_Reader {
+  background-color: gray;
+  width: 100vw;
   height: 100vh;
-  background-image: url(../../Image/qrcode.png);
+}
+
+.cross_style {
+  font-size: 2rem;
+  color: white;
+  padding: 0.5rem;
+}
+
+.Cnt_Logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-weight: 1000;
+}
+
+.logo_trott_2 {
+  max-width: 40vw;
+}
+
+.Title_Scan {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.Text_Scan {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: -0.04rem;
+}
+
+.QrReader section div {
+  top:20%!important;
+  height: 60%!important;
 }
