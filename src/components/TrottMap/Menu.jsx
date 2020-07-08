@@ -1,5 +1,6 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
+import { Link } from 'react-router-dom';
 
 import User from '../../Image/user.png';
 import Gift from '../../Image/gift.png';
@@ -29,8 +30,10 @@ function Burger() {
           </div>
         </div>
         <div className="user_list">
-          <img src={User} alt="user" />
-          Mon compte
+          <Link className="linkdeco" to="/map/Menu">
+            <img src={User} alt="user" />
+            Mon compte
+          </Link>
         </div>
         <div className="user_list">
           Les défis

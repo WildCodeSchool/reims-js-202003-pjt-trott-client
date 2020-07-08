@@ -79,6 +79,16 @@ function MyMap() {
           You are here
         </Popup>
       </Marker>
+      <Marker position={[48.866, 2.333336]} icon={myIcon} data={data}>
+        <Popup>
+          You are here
+        </Popup>
+      </Marker>
+      <Marker position={[48.86677, 2.333330]} icon={myIcon} data={data}>
+        <Popup>
+          You are here
+        </Popup>
+      </Marker>
     </Map>
   );
 }
