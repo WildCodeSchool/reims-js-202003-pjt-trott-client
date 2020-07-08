@@ -286,7 +286,12 @@
   letter-spacing: -0.04rem;
 }
 
+.QrReader section {
+  height: 20vh;
+}
+
 .QrReader section div {
-  top:20%!important;
-  height: 60%!important;
+  border-top: 150px solid rgba(0, 0, 0, 0.3)!important;
+  border-bottom: 150px solid rgba(0, 0, 0, 0.3)!important;
+  box-shadow: rgba(255, 255,255, 0.3) 0px 0px 0px 5px inset!important;
 }
