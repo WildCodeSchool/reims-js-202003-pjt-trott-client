@@ -10,7 +10,7 @@ import MyMap from './MyMap';
 import './trott.css';
 
 const client = new ApolloClient({
-  uri: 'http://flow-api.fluctuo.com/v1?access_token=g8bGqo424KsGKVRw8wxOZ7oGdWmM4lyL',
+  uri: 'https://flow-api.fluctuo.com/v1?access_token=g8bGqo424KsGKVRw8wxOZ7oGdWmM4lyL',
 });
 
 function useQuery() {
