@@ -42,6 +42,7 @@ function App() {
           <Route path="/map/menu">
             <Menu />
           </Route>
+
           <Route path="/scan">
             <Scan />
           </Route>
