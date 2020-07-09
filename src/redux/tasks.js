@@ -1,20 +1,19 @@
+const changeToken = (newToken) => ({
+  type: 'CHANGE_TOKEN',
+  newToken,
+});
 
-const initialState = {
-  filter: 'SHOW_TODO',
-  collection: [/* task objects here*/]
-};
-
-const reducer = (state = initialState, action) => {
+const tokenReducer = (state = { token: null }, action) => {
   switch (action.type) {
-    case 'CHANGE_FILTER':
+    case 'CHANGE_TOKEN':
       return {
         ...state,
-        filter: action.newFilter
+        token: action.newToken,
       };
-    // other cases
     default:
       return state;
   }
 };
 
-export default reducer;
+export default tokenReducer;
+export { changeToken };
