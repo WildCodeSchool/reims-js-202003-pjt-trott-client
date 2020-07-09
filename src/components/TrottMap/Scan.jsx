@@ -26,10 +26,6 @@ class Scan extends Component {
   };
 
   render() {
-    const previewStyle = {
-      height: "50vh",
-      width: "100vw",
-    }
     console.log(this.state.result)
     return (
       <div className='Bg_QrCode_Reader'>
@@ -44,7 +40,7 @@ class Scan extends Component {
             delay={300}
             onError={this.handleError}
             onScan={this.handleScan}
-            style={previewStyle}
+            style={{ width: "100%" }}
           />
         </div>
       </div>
