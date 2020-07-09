@@ -1,22 +1,50 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import QrReader from "react-qr-reader";
+import Trottinette1 from "../Trottinette/Trottinette1";
+import Trottinette2 from "../Trottinette/Trottinette2";
 
 import './trott.css'
 
 import trott2 from '../../Image/TROTT_2.png'
 
-class Scan extends Component {
-  state = {
-    result: []
-  };
+class Scan extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      content: null,
+    };
+    this.handleScanValide = this.handleScanValide.bind(this);
+  }
+
+  trott1 = () => {
+    const content = this.state.content;
+    if (content === "Trottinette1") {
+      return (
+        <div>
+          <Trottinette1 />
+        </div>
+      );
+    } else if (content === "Trottinette2") {
+      return (
+        <div>
+          <Trottinette2 />
+        </div>
+      );
+    }
+  }
+
+  handleScanValide = () => {
+    this.setState(state => ({
+    }));
+  }
 
   handleScan = data => {
     if (data) {
       this.setState({
-        result: data
+        content: data
       });
     }
   };
@@ -26,8 +54,8 @@ class Scan extends Component {
   };
 
   render() {
-    console.log(this.state.result)
-    return (
+    console.log(this.state.content)
+    return this.state.content == null ? (
       <div className='Bg_QrCode_Reader'>
         <Link to="/trott?page=2" className='cross_style'><FontAwesomeIcon icon={faTimesCircle} /></Link>
         <div className='Cnt_Logo'>
@@ -43,8 +71,9 @@ class Scan extends Component {
             style={{ width: "100%" }}
           />
         </div>
+        <button onClick={this.handleScanValide}>OK</button>
       </div>
-    );
+    ) : this.trott1()
   }
 }
 
