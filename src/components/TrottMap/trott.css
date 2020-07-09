@@ -4,7 +4,7 @@
 
 .bg_mycity {
   text-align: center;
-  background-image: url("https://zupimages.net/up/20/25/3l4c.png");
+  background-image: url("https://i.pinimg.com/originals/26/ea/fc/26eafc0b14488fea03fa8fa9751203ff.jpg");
   background-size: cover;
 }
 
@@ -46,7 +46,6 @@
   color: #ffffff;
   padding: 0.7rem 2rem;
   font-size: 1.3rem;
-
 }
 
 .Button_Container {
@@ -178,7 +177,12 @@
   padding-top: 0.5em;
 }
 
-.user_list img{
+.linkdeco {
+  text-decoration: none;
+  color: inherit;
+}
+
+.user_list img {
   margin-right: 1em;
 }
 
@@ -209,3 +213,123 @@
 .map {
   height: 100vh;
 }
+
+.ScanLogo {
+  position: absolute;
+  top: 700px;
+  left: 145px;
+  margin: auto;
+  z-index: 1001;
+}
+
+.Text_Scan {
+  font-family: "Poppins";
+  font-weight: 1000;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.Text_Scan:link {
+  text-decoration: none;
+}
+
+.Text_Scan:visited {
+  text-decoration: none;
+}
+
+.Text_Scan:active {
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------- */
+/* ---------------------------- TROTT - Interface SCAN ------------------------ */
+/* --------------------------------------------------------------------------- */
+
+
+.Bg_QrCode_Reader {
+  background-color: gray;
+  width: 100vw;
+  height: 100vh;
+}
+
+.cross_style {
+  font-size: 2rem;
+  color: white;
+  padding: 0.5rem;
+}
+
+.Cnt_Logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-weight: 1000;
+}
+
+.logo_trott_2 {
+  max-width: 40vw;
+}
+
+.Title_Scan {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.Text_Scan {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: -0.04rem;
+}
+
+.QrReader section div {
+  top:20%!important;
+  height: 60%!important;
+}
+
+/* --------------------------------------------------------------------------- */
+/* --------------------------- TROTT - Interface POPUP ----------------------- */
+/* --------------------------------------------------------------------------- */
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: none;
+  box-shadow: none
+}
+
+.general_popup {
+  display: flex;
+  flex-direction: column;
+}
+
+.bg_popup-block {
+  background-color: white;
+  display: flex;
+  width: 90vw;
+  border-block-end: solid black 20px;
+  border-radius: 6%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.pop-trott_img {
+  align-self: center;
+  justify-self: center;
+}
+
+.trott_provider-logo {
+  align-self: flex-start;
+  justify-self: center;
+  margin-top: 5%;
+  border-radius: 30%;
+}
+
+.start_button {
+  background-color: white;
+  align-self: flex-end;
+}
+

@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import 'leaflet/dist/leaflet.css';
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import {
+  Map, TileLayer, Marker, Popup,
+} from 'react-leaflet';
 import { gql } from 'apollo-boost';
 import { useQuery } from '@apollo/react-hooks';
 import L from 'leaflet';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
 import 'react-leaflet-markercluster/dist/styles.min.css';
+import PopInfo from './PopInfo';
 
 const tierIcon = L.icon({
   iconUrl: 'https://cdn.fluctuo.com/markers/tier.png',
@@ -99,7 +102,7 @@ function MyMap() {
           .map((vehicle) => (
             <Marker position={[vehicle.lat, vehicle.lng]} icon={birdIcon}>
               <Popup>
-                You are Bird
+                <PopInfo logo="https://cdn.fluctuo.com/providers/bird.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} />
               </Popup>
             </Marker>
           ))}
@@ -109,7 +112,7 @@ function MyMap() {
           .map((vehicle) => (
             <Marker position={[vehicle.lat, vehicle.lng]} icon={dottIcon}>
               <Popup>
-                You are Dott
+                <PopInfo logo="https://cdn.fluctuo.com/providers/dott.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} />
               </Popup>
             </Marker>
           ))}
@@ -119,7 +122,7 @@ function MyMap() {
           .map((vehicle) => (
             <Marker position={[vehicle.lat, vehicle.lng]} icon={voiIcon}>
               <Popup>
-                You are Voi
+                <PopInfo logo="https://cdn.fluctuo.com/providers/voi.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} />
               </Popup>
             </Marker>
           ))}
@@ -129,7 +132,7 @@ function MyMap() {
           .map((vehicle) => (
             <Marker position={[vehicle.lat, vehicle.lng]} icon={tierIcon}>
               <Popup>
-                You are Tier
+                <PopInfo logo="https://cdn.fluctuo.com/providers/tier.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} />
               </Popup>
             </Marker>
           ))}
@@ -139,7 +142,7 @@ function MyMap() {
           .map((vehicle) => (
             <Marker position={[vehicle.lat, vehicle.lng]} icon={windIcon}>
               <Popup>
-                You are Wind
+                <PopInfo logo="https://cdn.fluctuo.com/providers/wind.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} />
               </Popup>
             </Marker>
           ))}
@@ -149,7 +152,7 @@ function MyMap() {
           .map((vehicle) => (
             <Marker position={[vehicle.lat, vehicle.lng]} icon={ponyIcon}>
               <Popup>
-                You are Pony
+                <PopInfo logo="https://cdn.fluctuo.com/providers/pony.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} />
               </Popup>
             </Marker>
           ))}
