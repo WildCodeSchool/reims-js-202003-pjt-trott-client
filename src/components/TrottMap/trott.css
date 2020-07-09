@@ -291,7 +291,51 @@
 }
 
 .QrReader section div {
+  top:20%!important;
+  height: 60%!important;
   border-top: 150px solid rgba(0, 0, 0, 0.3)!important;
   border-bottom: 150px solid rgba(0, 0, 0, 0.3)!important;
   box-shadow: rgba(255, 255,255, 0.3) 0px 0px 0px 5px inset!important;
+}
+
+/* --------------------------------------------------------------------------- */
+/* --------------------------- TROTT - Interface POPUP ----------------------- */
+/* --------------------------------------------------------------------------- */
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: none;
+  box-shadow: none
+}
+
+.general_popup {
+  display: flex;
+  flex-direction: column;
+}
+
+.bg_popup-block {
+  background-color: white;
+  display: flex;
+  width: 90vw;
+  border-block-end: solid black 20px;
+  border-radius: 6%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.pop-trott_img {
+  align-self: center;
+  justify-self: center;
+}
+
+.trott_provider-logo {
+  align-self: flex-start;
+  justify-self: center;
+  margin-top: 5%;
+  border-radius: 30%;
+}
+
+.start_button {
+  background-color: white;
+  align-self: flex-end;
 }
