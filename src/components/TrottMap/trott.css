@@ -350,6 +350,10 @@
   flex: 1;
 }
 
+.trott_id {
+  text-decoration: underline;
+}
+
 .block_trott-info {
   display: flex;
 }
