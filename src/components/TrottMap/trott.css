@@ -254,28 +254,33 @@
 }
 
 .cross_style {
+  position: absolute;
+  left: 0.5rem;
+  z-index: 10001;
   font-size: 2rem;
-  color: white;
   padding: 0.5rem;
+  color: white;
 }
 
 .Cnt_Logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 9vh;
+  width: 100%;
+  text-align: center;
+  z-index: 10000;
   font-family: "Poppins";
   font-weight: 1000;
 }
 
 .logo_trott_2 {
-  max-width: 40vw;
+  max-width: 50vw;
 }
 
 .Title_Scan {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 600;
+  margin: 0.5rem;
 }
 
 .Text_Scan {
@@ -287,15 +292,18 @@
 }
 
 .QrReader section {
-  height: 20vh;
+  padding-top: 0!important;
+  height: 100vh;
 }
 
 .QrReader section div {
-  top:20%!important;
-  height: 60%!important;
-  border-top: 150px solid rgba(0, 0, 0, 0.3)!important;
-  border-bottom: 150px solid rgba(0, 0, 0, 0.3)!important;
-  box-shadow: rgba(255, 255,255, 0.3) 0px 0px 0px 5px inset!important;
+  width: 100vw!important;
+  height: 100vh!important;
+  border-top: 17rem solid rgba(0, 0, 0, 0.5)!important;
+  border-bottom: 17rem solid rgba(0, 0, 0, 0.5)!important;
+  border-right: 2rem solid rgba(0, 0, 0, 0.5)!important;
+  border-left: 2rem solid rgba(0, 0, 0, 0.5)!important;
+  box-shadow: rgba(255, 255, 255, .5) 0px 0px 0px 5px inset!important;
 }
 
 /* --------------------------------------------------------------------------- */
