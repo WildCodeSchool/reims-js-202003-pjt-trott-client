@@ -49,7 +49,7 @@ const posMarker = [48.866667, 2.333333];
 const defaultFluctuoAPI = gql`
 {
   vehicles (lat: ${posMarker[0]}, lng: ${posMarker[1]}) {
-    id
+    publicId
     type
     attributes
     lat
@@ -74,7 +74,7 @@ function MyMap() {
     const fluctuoAPI = gql`
     {
       vehicles (lat: ${posMarker[0]}, lng: ${posMarker[1]}) {
-        id
+        battery
         type
         attributes
         lat
@@ -102,7 +102,7 @@ function MyMap() {
           .map((vehicle) => (
             <Marker position={[vehicle.lat, vehicle.lng]} icon={birdIcon}>
               <Popup>
-                <PopInfo logo="https://cdn.fluctuo.com/providers/bird.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} />
+                <PopInfo logo="https://cdn.fluctuo.com/providers/bird.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} energy={vehicle.battery} />
               </Popup>
             </Marker>
           ))}
@@ -112,7 +112,7 @@ function MyMap() {
           .map((vehicle) => (
             <Marker position={[vehicle.lat, vehicle.lng]} icon={dottIcon}>
               <Popup>
-                <PopInfo logo="https://cdn.fluctuo.com/providers/dott.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} />
+                <PopInfo logo="https://cdn.fluctuo.com/providers/dott.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} energy={vehicle.battery} />
               </Popup>
             </Marker>
           ))}
@@ -122,7 +122,7 @@ function MyMap() {
           .map((vehicle) => (
             <Marker position={[vehicle.lat, vehicle.lng]} icon={voiIcon}>
               <Popup>
-                <PopInfo logo="https://cdn.fluctuo.com/providers/voi.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} />
+                <PopInfo logo="https://cdn.fluctuo.com/providers/voi.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} energy={vehicle.battery} />
               </Popup>
             </Marker>
           ))}
@@ -132,7 +132,7 @@ function MyMap() {
           .map((vehicle) => (
             <Marker position={[vehicle.lat, vehicle.lng]} icon={tierIcon}>
               <Popup>
-                <PopInfo logo="https://cdn.fluctuo.com/providers/tier.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} />
+                <PopInfo logo="https://cdn.fluctuo.com/providers/tier.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} energy={vehicle.battery} />
               </Popup>
             </Marker>
           ))}
@@ -142,7 +142,7 @@ function MyMap() {
           .map((vehicle) => (
             <Marker position={[vehicle.lat, vehicle.lng]} icon={windIcon}>
               <Popup>
-                <PopInfo logo="https://cdn.fluctuo.com/providers/wind.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} />
+                <PopInfo logo="https://cdn.fluctuo.com/providers/wind.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} energy={vehicle.battery} />
               </Popup>
             </Marker>
           ))}
@@ -152,7 +152,7 @@ function MyMap() {
           .map((vehicle) => (
             <Marker position={[vehicle.lat, vehicle.lng]} icon={ponyIcon}>
               <Popup>
-                <PopInfo logo="https://cdn.fluctuo.com/providers/pony.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} />
+                <PopInfo logo="https://cdn.fluctuo.com/providers/pony.jpg" posUser={posMarker} posTrott={[vehicle.lat, vehicle.lng]} energy={vehicle.battery} />
               </Popup>
             </Marker>
           ))}
