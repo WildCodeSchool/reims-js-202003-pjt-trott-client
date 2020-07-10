@@ -306,6 +306,27 @@
   box-shadow: rgba(255, 255, 255, .5) 0px 0px 0px 5px inset!important;
 }
 
+/* --------------------------- TROTT - Preview SCAN ----------------------- */
+
+.container_Content {
+  background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
+  font-family: "Poppins";
+  color: white;
+  text-align: center;
+}
+
+.title_troot {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.Preview_troot {
+  border-radius: 1rem;
+  border: solid 1px rgb(77, 77, 77); 
+  max-width: 50%;
+}
+
+
 /* --------------------------------------------------------------------------- */
 /* --------------------------- TROTT - Interface POPUP ----------------------- */
 /* --------------------------------------------------------------------------- */
