@@ -308,34 +308,82 @@
 }
 
 .general_popup {
+  width: 95vw;
   display: flex;
   flex-direction: column;
+  font-family: "Poppins", serif;
 }
 
 .bg_popup-block {
   background-color: white;
-  display: flex;
-  width: 90vw;
   border-block-end: solid black 20px;
-  border-radius: 6%;
+  border-radius: 20px;
+  width: 95vw;
+  margin-bottom: 5%;
+  padding: 5% 2% 5% 0;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 5%;
 }
 
 .pop-trott_img {
   align-self: center;
   justify-self: center;
+  max-width: 30vw;
 }
 
 .trott_provider-logo {
   align-self: flex-start;
   justify-self: center;
-  margin-top: 5%;
   border-radius: 30%;
 }
 
-.start_button {
-  background-color: white;
+.popup_text-info p {
+  margin: 0;
+}
+
+.popup_text-info {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.block_trott-info {
+  display: flex;
+}
+
+.block_column-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2vw;
+}
+
+.block_column-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.button_popup-trottinfo {
+  background-color: black;
+  border-radius: 38px;
+  width: fit-content;
+  color: whitesmoke;
+  padding: 1rem 2rem;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
   align-self: flex-end;
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaflet-popup-content {
+  margin: 0px;
 }

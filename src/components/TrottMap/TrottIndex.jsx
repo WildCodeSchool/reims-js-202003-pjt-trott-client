@@ -33,7 +33,7 @@ function TrottIndex() {
     case 2:
       return (
         <ApolloProvider client={client}>
-          <ScanLink/>
+          <ScanLink />
           <Burger />
           <MyMap />
         </ApolloProvider>

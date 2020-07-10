@@ -21,7 +21,7 @@ function Distance(props) {
   if (dist >= 1000) {
     dist *= 1.609344;
   }
-  return dist;
+  return `${dist} kms`;
 }
 
 export default Distance;
