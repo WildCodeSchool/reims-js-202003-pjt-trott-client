@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import {Animated} from "react-animated-css";
 import QrReader from "react-qr-reader";
 import Trottinette1 from "../Trottinette/Trottinette1";
 import Trottinette2 from "../Trottinette/Trottinette2";
@@ -19,7 +20,7 @@ class Scan extends React.Component {
     this.handleScanValide = this.handleScanValide.bind(this);
   }
 
-  trott1 = () => {
+  trottContent = () => {
     const content = this.state.content;
     if (content === "Trottinette1") {
       return (
@@ -56,24 +57,26 @@ class Scan extends React.Component {
   render() {
     console.log(this.state.content)
     return this.state.content == null ? (
-      <div className='Bg_QrCode_Reader'>
-        <Link to="/trott?page=2" className='cross_style'><FontAwesomeIcon icon={faTimesCircle} /></Link>
-        <div className='Cnt_Logo'>
-          <img src={trott2} alt="TROTT_2" className='logo_trott_2' />
-          <h2 className='Title_Scan'>SCAN</h2>
+      <Animated animationIn="fadeInLeft" animationInDuration='500' animationOut="fadeOut" isVisible={true}>
+        <div className='Bg_QrCode_Reader'>
+          <Link to="/trott?page=2" className='cross_style'><FontAwesomeIcon icon={faTimesCircle} /></Link>
+          <div className='Cnt_Logo'>
+            <img src={trott2} alt="TROTT_2" className='logo_trott_2' />
+            <h2 className='Title_Scan'>SCAN</h2>
+          </div>
+          <div>
+            <QrReader
+              className='QrReader'
+              delay={300}
+              onError={this.handleError}
+              onScan={this.handleScan}
+              style={{ width: "100%" }}
+            />
+          </div>
+          <button onClick={this.handleScanValide}>OK</button>
         </div>
-        <div>
-          <QrReader
-            className='QrReader'
-            delay={300}
-            onError={this.handleError}
-            onScan={this.handleScan}
-            style={{ width: "100%" }}
-          />
-        </div>
-        <button onClick={this.handleScanValide}>OK</button>
-      </div>
-    ) : this.trott1()
+      </Animated>
+    ) : this.trottContent()
   }
 }
 
