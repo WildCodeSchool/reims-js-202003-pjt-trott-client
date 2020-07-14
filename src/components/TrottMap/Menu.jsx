@@ -1,10 +1,23 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import User from '../../Image/user.png';
 import Gift from '../../Image/gift.png';
 import BurgerMenu from '../../Image/menu.png';
+import { useEffect } from 'react';
+
+
+/* const mapStatetoProps = (state) => ({
+  token : state.token,
+});
+
+const NoConnect = ({ token, history }) => {
+  useEffect(() => {
+    if (token === null)
+  })
+} */
 
 function Burger() {
   // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
@@ -44,9 +57,6 @@ function Burger() {
         </div>
         <div className="user_list">
           Environnement
-        </div>
-        <div className="user_list">
-          Discover
         </div>
       </div>
     </Menu>
