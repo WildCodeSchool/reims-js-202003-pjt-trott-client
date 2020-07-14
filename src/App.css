@@ -6,7 +6,7 @@
   height: 100vh;
   overflow: hidden;
   background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
-  font-family: "Poppins";
+  font-family: "Poppins", serif;
 }
 
 .link_button {
@@ -15,13 +15,4 @@
   color: #ff5757;
   padding: 0.5rem 3rem;
   text-decoration: none;
-}
-
-.link_button_register {
-  background-color: rgb(255, 255, 255);
-  border-radius: 39px;
-  color: #ff5757;
-  padding: 0.5rem 3rem;
-  text-decoration: none;
-  margin: 5px 0;
 }

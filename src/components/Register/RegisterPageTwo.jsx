@@ -9,6 +9,7 @@ class RegisterPageTwo extends React.Component {
       username: '',
       email: '',
       password: '',
+      sponshorship: '',
     };
     this.onChange = this.onChange.bind(this);
     this.submitForm = this.submitForm.bind(this);
@@ -37,17 +38,17 @@ class RegisterPageTwo extends React.Component {
 
   render() {
     return (
-      <div className="body_register">
+      <div className="bg_register bg_regPageTwo">
         <img
           src="https://cdn.discordapp.com/attachments/714501146701463636/720283550003363880/TROTT.png"
-          className="logo"
+          className="logoTrott"
           alt="logo"
         />
 
-        <form onSubmit={this.submitForm}>
-          <fieldset>
+        <form onSubmit={this.submitForm} className="block_form">
+          <fieldset className="block_fieldset">
             <legend>Par email</legend>
-            <div>
+            <div className="form_container">
               <label htmlFor="username">Nom d'utilisateur</label>
               <input
                 type="text"
@@ -56,9 +57,7 @@ class RegisterPageTwo extends React.Component {
                 onChange={this.onChange}
                 value={this.state.username}
               />
-            </div>
 
-            <div>
               <label htmlFor="email">Adresse Email</label>
               <input
                 type="text"
@@ -67,10 +66,8 @@ class RegisterPageTwo extends React.Component {
                 onChange={this.onChange}
                 value={this.state.email}
               />
-            </div>
 
-            <div>
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">Mot de passe</label>
               <input
                 type="password"
                 id="password"
@@ -78,22 +75,20 @@ class RegisterPageTwo extends React.Component {
                 onChange={this.onChange}
                 value={this.state.password}
               />
-            </div>
-
-            <hr />
-
-            <div>
-              <input className="link_as_button" type="submit" value="Envoyer" />
+              <label htmlFor="sponsorship">Code Parrainage</label>
+              <input
+                type="text"
+                id="sponshorship"
+                name="sponsorship"
+                onChange={this.onChange}
+                value={this.state.sponsorship}
+              />
+              <input className="link_submitButton" type="submit" value="Envoyer" />
             </div>
           </fieldset>
         </form>
-
-        <div className="Other_Connect">
-          <Link className="link_as_button_Transparent" to="/register?step=3">Autre moyen de Connexion</Link>
-          <div>
-            <Link className="Without_Connect" to="/trott">Continuez sans se connecter</Link>
-          </div>
-        </div>
+        <Link className="link_otherConnect" to="/register?step=3">Autres moyens de connexion</Link>
+        <Link className="Without_Connect" to="/trott">Continuez sans se connecter</Link>
       </div>
     );
   }

@@ -1,21 +1,42 @@
+.bg_register {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoTrott {
+  max-width: 60vw;
+  padding-top: 4vh;
+  margin-bottom: 4vh;
+  align-self: center;
+}
+
+.Without_Connect {
+  align-self: center;
+  position: absolute;
+  bottom: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.link_button_register {
+  align-self: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 39px;
+  color: #ff5757;
+  padding: 0.5rem 3rem;
+  text-decoration: none;
+  margin: 3px 0;
+  text-align: center;
+  width: 50vw;
+}
+
 /* --------------------------------------------------------------------------- */
 /* ----------------------------- Register - Page ONE ------------------------- */
 /* --------------------------------------------------------------------------- */
 
-.bg_registerPageOne {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-}
-
-.fig{margin-top: 0;}
-
-.logo {
-  max-width: 60vw;
-  padding-top: 4vh;
-  margin-bottom: 4vh;
-}
 .title {
   font-size: 4rem;
   margin-top: 0;
@@ -26,6 +47,7 @@
   text-align: left;
   margin-left: 5vw;
 }
+
 .createProfile {
   width: 297px;
   margin-bottom: 0;
@@ -64,20 +86,14 @@
   border: none;
 }
 
-.imageConnect{
-  margin-bottom: 5vh;
-}
-
-.pWconnect {
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  margin-bottom: 0;
-  padding-bottom: 2%;
-  margin-top: 5px;
+.imageConnect {
+  align-self: center;
+  margin-bottom: 10%;
+  width: 75vw;
 }
 
 .block_register_linkButton {
+  align-self: center;
   width: 95vw;
   display: flex;
   flex-wrap: wrap;
@@ -87,6 +103,62 @@
 /* --------------------------------------------------------------------------- */
 /* ----------------------------- Register - Page TWO ------------------------- */
 /* --------------------------------------------------------------------------- */
+
+.bg_regPageTwo {
+  justify-content: center;
+  align-items: center;
+}
+
+.block_form {
+  width: 95vw;
+  align-self: center;
+  margin-bottom: 8vh;
+  height: 50vh;
+  align-items: center;
+  color: white;
+}
+
+.block_fieldset {
+  height: 100%;
+  padding: 20px 0px;
+}
+
+.form_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.form_container input {
+  margin-bottom: 2vh;
+}
+
+.link_submitButton {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgb(255, 255, 255);
+  border-radius: 39px;
+  color: #ff5757;
+  padding: 0.5rem 3rem;
+  text-decoration: none;
+  margin-top: 6vh;
+  font-family: "Poppins", serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.link_otherConnect {
+  align-self: center;
+  border: solid white 2px;
+  border-radius: 39px;
+  color: white;
+  padding: 0.5rem 3rem;
+  text-decoration: none;
+  margin: 3px 0;
+  text-align: center;
+  width: 50vw;
+}
 
 /* --------------------------------------------------------------------------- */
 /* ---------------------------- Register - Page TWO BIS ---------------------- */
@@ -212,17 +284,7 @@
   margin: 3rem;
 }
 
-.Other_Connect {
-  height: 25vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
 
-.Without_Connect {
-  color: white;
-  text-decoration: none;
-}
 
 .link_as_button {
   background-color: rgb(255, 255, 255);
@@ -230,15 +292,6 @@
   color: #ff5757;
   padding: 0.5rem 3rem;
   text-decoration: none;
-}
-
-.link_as_button_Transparent {
-  border-radius: 39px;
-  border: solid white 1px;
-  padding: 0.5rem;
-  text-decoration: none;
-  font-size: 0.8rem;
-  color: #ffffff;
 }
 
 /* --------------------------------------------------------------------------- */
