@@ -1,18 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { createStore, combineReducers } from 'redux';
+import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import tasksReducer from './redux/tasks';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import TokenReducer from './redux/TokenReducer'
 
 
-const rootReducer = combineReducers({
-  tasks: tasksReducer
-});
-
-const store = createStore(rootReducer);
+const store = createStore(
+  TokenReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 ReactDOM.render(
   <Provider store={store}>

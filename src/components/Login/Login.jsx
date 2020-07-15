@@ -3,7 +3,10 @@ import axios from 'axios';
 import './Login.css';
 import { useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { changeToken } from '../../redux/tasks';
+
+const mapStatetoProps = (state) => ({
+  token: state.token,
+});
 
 const LoginContainer = ({ dispatch }) => {
   const [username, setUsername] = useState('');
@@ -28,7 +31,10 @@ const LoginContainer = ({ dispatch }) => {
     axios.post(url, { username, password })
       .then((res) => res.data)
       .then((res) => {
-        dispatch(changeToken(res.token));
+        dispatch({
+          type: 'CHANGE_TOKEN',
+          newToken: res.token,
+        });
         history.push('/trott');
       })
       .catch(() => {
@@ -64,5 +70,5 @@ const LoginContainer = ({ dispatch }) => {
   );
 };
 
-const Login = connect()(LoginContainer);
+const Login = connect(mapStatetoProps)(LoginContainer);
 export default Login;

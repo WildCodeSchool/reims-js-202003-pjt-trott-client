@@ -190,6 +190,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  text-align: center;
 }
 
 .menu_info_text {
@@ -284,11 +285,12 @@
 }
 
 .Text_Scan {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: -0.04rem;
+  text-align: center;
 }
 
 .QrReader section {
