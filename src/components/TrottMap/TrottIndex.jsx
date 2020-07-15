@@ -6,7 +6,7 @@ import ApolloClient from 'apollo-boost';
 import MyCity from './MyCity';
 import Burger from './Menu';
 import MyMap from './MyMap';
-import ScanLink from './ScanLink';
+import ScanLink from '../ScanPage/ScanLink';
 import Filter from './Filter';
 
 import './trott.css';

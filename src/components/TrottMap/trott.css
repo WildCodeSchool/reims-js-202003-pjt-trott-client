@@ -335,6 +335,43 @@
 }
 
 /* --------------------------------------------------------------------------- */
+/* ---------------------------- TROTT - Interface MAP ------------------------ */
+/* --------------------------------------------------------------------------- */
+
+.map {
+  height: 100vh;
+}
+
+.ScanLogo {
+  position: absolute;
+  top: 700px;
+  left: 145px;
+  margin: auto;
+  z-index: 1001;
+}
+
+.Text_Scan {
+  font-family: "Poppins";
+  font-weight: 1000;
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-align: center;
+}
+
+.Text_Scan:link {
+  text-decoration: none;
+}
+
+.Text_Scan:visited {
+  text-decoration: none;
+}
+
+.Text_Scan:active {
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------- */
 /* ---------------------------- TROTT - Interface SCAN ------------------------ */
 /* --------------------------------------------------------------------------- */
 
@@ -345,43 +382,46 @@
   height: 100vh;
 }
 
-.cross_style {
-  position: absolute;
-  left: 0.5rem;
-  z-index: 10001;
-  font-size: 2rem;
-  padding: 0.5rem;
-  color: white;
-}
-
 .Cnt_Logo {
+  background: linear-gradient(131deg, #ff5757 0%, rgb(255, 15, 103) 100%);
+  border-radius: 0.5rem;
+  border: white 1px solid;
   position: absolute;
-  top: 9vh;
-  width: 100%;
+  transform: translate(-50%);
+  height: 10vh;
+  width: 77%;
+  top: 10vh;
+  left: 50%;
   text-align: center;
   z-index: 10000;
-  font-family: "Poppins";
-  font-weight: 1000;
 }
 
 .logo_trott_2 {
-  max-width: 50vw;
+  max-width: 11vw;
 }
+
 
 .Title_Scan {
   color: white;
-  font-size: 1.7rem;
+  font-size: 0.9rem;
   font-weight: 600;
   margin: 0.5rem;
+  line-height: 1.2;
+  font-style: normal;
 }
 
-.Text_Scan {
-  color: rgb(0, 0, 0);
+.ctn_link_Phone {
+  margin: 1rem;
+}
+
+.link_Phone {
   font-family: 'Poppins', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: -0.04rem;
-  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.01rem;
+  line-height: 1.2;
+  font-style: normal;
 }
 
 .QrReader section {
@@ -392,31 +432,22 @@
 .QrReader section div {
   width: 100vw!important;
   height: 100vh!important;
-  border-top: 17rem solid rgba(0, 0, 0, 0.5)!important;
+  border-top: 20rem solid rgba(0, 0, 0, 0.5)!important;
   border-bottom: 17rem solid rgba(0, 0, 0, 0.5)!important;
-  border-right: 2rem solid rgba(0, 0, 0, 0.5)!important;
-  border-left: 2rem solid rgba(0, 0, 0, 0.5)!important;
-  box-shadow: rgba(255, 255, 255, .5) 0px 0px 0px 5px inset!important;
+  border-right: 4.5rem solid rgba(0, 0, 0, 0.5)!important;
+  border-left: 4.5rem solid rgba(0, 0, 0, 0.5)!important;
+  box-shadow: rgba(255, 255, 255) 0px 0px 0px 5px inset!important;
 }
 
-/* --------------------------- TROTT - Preview SCAN ----------------------- */
-
-.container_Content {
-  background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
-  font-family: "Poppins";
-  color: white;
-  text-align: center;
-}
-
-.title_troot {
-  font-size: 3rem;
-  padding: 1rem;
-}
-
-.Preview_troot {
-  border-radius: 1rem;
-  border: solid 1px rgb(77, 77, 77); 
-  max-width: 50%;
+.cross_style {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10001;
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: hsl(338, 100%, 50%);
 }
 
 
