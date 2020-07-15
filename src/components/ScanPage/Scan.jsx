@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
-import {Animated} from "react-animated-css";
+import { Animated } from "react-animated-css";
 import QrReader from "react-qr-reader";
-import Trottinette1 from "../Trottinette/Trottinette1";
-import Trottinette2 from "../Trottinette/Trottinette2";
+import Trottinette1 from "./Trottinette/Trottinette1";
+import Trottinette2 from "./Trottinette/Trottinette2";
 
-import './trott.css'
+import '../TrottMap/trott.css'
 
-import trott2 from '../../Image/TROTT_2.png'
+import code from '../../Image/qr-code_logo.svg'
 
 class Scan extends React.Component {
   constructor(props) {
@@ -17,32 +17,21 @@ class Scan extends React.Component {
     this.state = {
       content: null,
     };
-    this.handleScanValide = this.handleScanValide.bind(this);
   }
 
   trottContent = () => {
     const content = this.state.content;
     if (content === "Trottinette1") {
       return (
-        <div>
-          <Trottinette1 />
-        </div>
+        <Trottinette1 />
       );
     } else if (content === "Trottinette2") {
       return (
-        <div>
-          <Trottinette2 />
-        </div>
+        <Trottinette2 />
       );
     }
   }
 
-  handleScanValide = () => {
-    this.setState(state => ({
-    }));
-  }
-
-  
   handleScan = data => {
     if (data) {
       this.setState({
@@ -62,8 +51,11 @@ class Scan extends React.Component {
         <div className='Bg_QrCode_Reader'>
           <Link to="/trott?page=2" className='cross_style'><FontAwesomeIcon icon={faTimesCircle} /></Link>
           <div className='Cnt_Logo'>
-            <img src={trott2} alt="TROTT_2" className='logo_trott_2' />
-            <h2 className='Title_Scan'>SCAN</h2>
+            <h2 className='Title_Scan'>SCANNE LE QR CODE</h2>
+            <img src={code} alt="TROTT_2" className='logo_trott_2' />
+            <div className='ctn_link_Phone'>
+              <Link className='link_Phone' to="/register?step=5">ou entre le code du vehicule</Link>
+            </div>
           </div>
           <div>
             <QrReader
@@ -74,7 +66,6 @@ class Scan extends React.Component {
               style={{ width: "100%" }}
             />
           </div>
-          <button onClick={this.handleScanValide}>OK</button>
         </div>
       </Animated>
     ) : this.trottContent()

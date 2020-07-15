@@ -12,7 +12,7 @@ import RegisterIndex from './components/Register/RegisterIndex';
 import Login from './components/Login/Login';
 import TrottIndex from './components/TrottMap/TrottIndex';
 import Menu from './components/Menu/Menu';
-import Scan from './components/TrottMap/Scan';
+import Scan from './components/ScanPage/Scan';
 
 function App() {
   return (

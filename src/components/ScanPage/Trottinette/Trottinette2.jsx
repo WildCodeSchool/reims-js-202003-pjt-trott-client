@@ -1,5 +1,5 @@
 import React from 'react';
-import troot1 from "../../Image/bird.jpg";
+import troot1 from "../../../Image/bird.jpg";
 import { Link } from 'react-router-dom';
 
 const Trottinette2 = () => (
