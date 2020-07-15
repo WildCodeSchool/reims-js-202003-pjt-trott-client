@@ -7,6 +7,7 @@ import MyCity from './MyCity';
 import Burger from './Menu';
 import MyMap from './MyMap';
 import ScanLink from './ScanLink';
+import Filter from './Filter';
 
 import './trott.css';
 import MyMapTwo from './MyMapTwo';
@@ -34,11 +35,10 @@ function TrottIndex() {
     case 2:
       return (
         <ApolloProvider client={client}>
+          <Burger />
+          <ScanLink />
+          <Filter />
           <MyMapTwo />
-          <div>
-            <ScanLink />
-            <Burger />
-          </div>
         </ApolloProvider>
       );
     default:

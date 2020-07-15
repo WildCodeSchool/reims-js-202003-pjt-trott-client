@@ -17,7 +17,8 @@ const Icon = (operator) => L.icon({
 });
 
 const posMarker = [48.866667, 2.333333];
-const defaultFluctuoAPI = gql`
+const generateGql = (posMarker) => (
+  gql`
 {
   ${[
     'tier',
@@ -41,43 +42,19 @@ const defaultFluctuoAPI = gql`
     }
   `), '')}
 }
-`;
+`);
 
 function MyMapTwo() {
   const [lat, setLat] = useState(48.866667);
   const [lng, setLng] = useState(2.333333);
-  const [fluctuoAPI, setFluctuoAPI] = useState(defaultFluctuoAPI);
+  const [fluctuoAPI, setFluctuoAPI] = useState(generateGql(posMarker));
 
   const position = [lat, lng];
   const { data } = useQuery(fluctuoAPI);
 
   useEffect(() => {
     const posMarker = [48.866667, 2.333333];
-    const fluctuoAPI = gql`
-    {
-      ${[
-    'tier',
-    'dott',
-    'bird',
-    'voi',
-    'wind',
-    'pony',
-  ].reduce((acc, provider) => (`
-        ${acc} 
-        ${provider} (lat: ${posMarker[0]}, lng: ${posMarker[1]}) {
-          publicId
-          type
-          lat
-          lng
-          battery
-          provider {
-            name
-            slug
-          }
-        }
-      `), '')}
-    }
-    `;
+    const fluctuoAPI = generateGql(posMarker);
     setFluctuoAPI(fluctuoAPI);
   }, []);
   useEffect(() => {

@@ -70,17 +70,14 @@
 .logo_Landing {
   width: 33%;
 }
-
 /* --------------------------------------------------------------------------- */
 /* ----------------------------- TROTT - Menu Burger ------------------------- */
 /* --------------------------------------------------------------------------- */
 
 .bm-item {
-  display: inline-block;
   /* Our sidebar item styling */
   text-decoration: none;
   margin-bottom: 10px;
-  color: #d1d1d1;
   transition: color 0.2s;
 }
 
@@ -216,6 +213,56 @@
   border-radius: 20px 0 0 0;
 }
 
+/* --------------------------------------------------------------------------- */
+/* --------------------------- TROTT - Menu Filter ----------------------- */
+/* --------------------------------------------------------------------------- */
+
+.button_position {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  bottom: 55px;
+  left: 80vw;
+}
+
+.css-2b097c-container {
+  width: 85vw;
+  color: black;
+}
+
+.block_filter_content {
+  min-width: 40vw;
+  max-height: 15vh;
+  background-color: white;
+  text-align: center;
+  border-radius: 1rem 1rem 0 0;
+  color: black;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.block_filter_content p{
+  margin: 0;
+}
+
+.block_filter_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.filter_content_display {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.filter_rating {
+  background-color: black;
+  color: white;
+  border-radius: 0 0 1rem 1rem;
+}
 /* --------------------------------------------------------------------------- */
 /* ---------------------------- TROTT - Interface MAP ------------------------ */
 /* --------------------------------------------------------------------------- */
