@@ -59,32 +59,33 @@ function Burger(props) {
       </Menu>
     );
   } return (
-    <Menu width="100vw" customBurgerIcon={<img src={BurgerMenu} alt="icon" />} className="size-no-connect">
-      <div className="user_stat">
-        <p className="user_no_stat">  Se connecter pour voir les statistiques</p>
-      </div>
-      <div className="user_list">
-        <Link className="linkdeco" to="/map/menu">
+    <>
+      <ToastContainer />
+      <Menu width="100vw" customBurgerIcon={<img src={BurgerMenu} alt="icon" />} className="size-no-connect">
+        <div className="user_stat">
+          <p className="user_no_stat">  Se connecter pour voir les statistiques</p>
+        </div>
+        <div onClick={notify} className="user_list">
           <img src={User} alt="user" />
           Mon compte
-        </Link>
-      </div>
-      <div className="user_list">
-        Les défis
-      </div>
-      <div className="user_list">
-        <img src={Gift} alt="gift" />
-        Parrainage
-      </div>
-      <div className="user_list">
-        Environnement
-      </div>
-      <div className="user_list">
-        <Link to="/register">
-          <button className="user-login-register" type="button">S'inscrire /Se connecter</button>
-        </Link>
-      </div>
-    </Menu>
+        </div>
+        <div onClick={notify} className="user_list">
+          Les défis
+        </div>
+        <div onClick={notify} className="user_list">
+          <img src={Gift} alt="gift" />
+          Parrainage
+        </div>
+        <div onClick={notify} className="user_list">
+          Environnement
+        </div>
+        <div className="user_list">
+          <Link to="/register">
+            <button className="user-login-register" type="button">S'inscrire /Se connecter</button>
+          </Link>
+        </div>
+      </Menu>
+    </>
   );
 }
 
