@@ -88,6 +88,15 @@
   color: white;
 }
 
+.img-menu-no-connect {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 35px;
+  bottom: 55px;
+  z-index: 1000;
+}
+
 .bm-burger-button {
   position: absolute;
   width: 45px;
