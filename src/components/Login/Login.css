@@ -4,9 +4,11 @@
   margin-bottom: 4vh;
 }
 
-.loginDiv{
+.bg_login{
   height: 100vh;
-  background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title{

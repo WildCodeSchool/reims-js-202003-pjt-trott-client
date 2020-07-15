@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Login.css';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 const mapStatetoProps = (state) => ({
@@ -43,29 +43,43 @@ const LoginContainer = ({ dispatch }) => {
   }
 
   return (
-    <div className="loginDiv">
+    <div className="bg_login">
       <div>
         <img
           src="https://cdn.discordapp.com/attachments/714501146701463636/720283550003363880/TROTT.png"
-          className="logo"
+          className="logoTrott"
           alt="logo"
         />
       </div>
-
-      <h1 className="title">Connexion utilisateur</h1>
-      <form onSubmit={submitForm}>
-        <div className="inputDiv">
-          <label className="label" htmlFor="user">username</label>
-          <input className="input" type="text" id="user" name="username" onChange={onChangeUsername} value={username} />
-        </div>
-        <div className="inputDiv">
-          <label className="label" htmlFor="user">password</label>
-          <input className="input" type="password" id="user" name="password" onChange={onChangePassword} value={password} />
-        </div>
-        <div>
-          <input className="connexionInput" type="submit" value="Connexion" />
-        </div>
+      <form onSubmit={submitForm} className="block_form">
+        <fieldset className="block_fieldset">
+          <legend>Connexion</legend>
+          <div className="form_container">
+            <label className="label" htmlFor="user">Nom d'utilisateur</label>
+            <input
+              className="input"
+              type="text"
+              id="user"
+              name="username"
+              onChange={onChangeUsername}
+              value={username}
+            />
+            <label className="label" htmlFor="user">Mot de Passe</label>
+            <input
+              className="input"
+              type="password"
+              id="user"
+              name="password"
+              onChange={onChangePassword}
+              value={password}
+            />
+            <input className="link_submitButton" type="submit" value="Connexion" />
+          </div>
+        </fieldset>
       </form>
+
+      <Link className="link_otherConnect" to="/register?step=3">Autres moyens de connexion</Link>
+      <Link className="Without_Connect" to="/trott">Continuez sans se connecter</Link>
     </div>
   );
 };
