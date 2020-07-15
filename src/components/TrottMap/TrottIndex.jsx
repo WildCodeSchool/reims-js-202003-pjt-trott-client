@@ -9,6 +9,7 @@ import MyMap from './MyMap';
 import ScanLink from './ScanLink';
 
 import './trott.css';
+import MyMapTwo from './MyMapTwo';
 
 const client = new ApolloClient({
   uri: 'https://flow-api.fluctuo.com/v1?access_token=g8bGqo424KsGKVRw8wxOZ7oGdWmM4lyL',
@@ -33,9 +34,11 @@ function TrottIndex() {
     case 2:
       return (
         <ApolloProvider client={client}>
-          <ScanLink />
-          <Burger />
-          <MyMap />
+          <MyMapTwo />
+          <div>
+            <ScanLink />
+            <Burger />
+          </div>
         </ApolloProvider>
       );
     default:
