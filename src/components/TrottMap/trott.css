@@ -141,6 +141,11 @@
   bottom: 0;
 }
 
+.size-no-connect {
+  max-height: 38vh;
+  bottom: 0;
+}
+
 .menu_infos {
   width: 85vw;
   height: 7vh;
@@ -184,6 +189,36 @@
   font-weight: 600;
   font-size: 1rem;
   padding-top: 0.5em;
+}
+
+.user_stat {
+  width: 93%;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ea8888;
+  border-radius: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 0.4rem
+}
+
+.user_stat p {
+  margin: 0;
+}
+
+.user-login-register{
+  font-size: 1rem;
+  padding: 0.4rem;
+  text-align: center;
+  width: 93%;
+  color:  #fff;
+  background-color:  #925cff;
+  border-radius: 18px;
+  border-color: #925cff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins";
+  font-weight: 600;
 }
 
 .linkdeco {
@@ -409,4 +444,9 @@
 
 .leaflet-popup-content {
   margin: 0px;
+}
+
+
+.Toastify__toast--info {
+  background: #ff6464;
 }

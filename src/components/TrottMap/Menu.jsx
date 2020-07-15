@@ -14,7 +14,8 @@ const mapStateToProps = (state) => ({
 
 
 function Burger(props) {
-  const notify = () => toast('Wow so easy !');
+  const notify = () => toast.info('Tu dois être connecté pour ouvrir le menu !');
+
 
   if (props.token !== null) {
     return (
@@ -58,11 +59,40 @@ function Burger(props) {
       </Menu>
     );
   } return (
-    <>
-      <img className="img-menu-no-connect" onClick={notify} src={BurgerMenu} alt="notify" />
-      <ToastContainer />
-    </>
+    <Menu width="100vw" customBurgerIcon={<img src={BurgerMenu} alt="icon" />} className="size-no-connect">
+      <div className="user_stat">
+        <p className="user_no_stat">  Se connecter pour voir les statistiques</p>
+      </div>
+      <div className="user_list">
+        <Link className="linkdeco" to="/map/menu">
+          <img src={User} alt="user" />
+          Mon compte
+        </Link>
+      </div>
+      <div className="user_list">
+        Les défis
+      </div>
+      <div className="user_list">
+        <img src={Gift} alt="gift" />
+        Parrainage
+      </div>
+      <div className="user_list">
+        Environnement
+      </div>
+      <div className="user_list">
+        <Link to="/register">
+          <button className="user-login-register" type="button">S'inscrire /Se connecter</button>
+        </Link>
+      </div>
+    </Menu>
   );
 }
 
 export default connect(mapStateToProps)(Burger);
+
+/*
+<Link to="/register">
+        <button type="button">se connecter</button>
+      </Link>
+      <img className="img-menu-no-connect" onClick={notify} src={BurgerMenu} alt="notify" />
+      <ToastContainer /> */
