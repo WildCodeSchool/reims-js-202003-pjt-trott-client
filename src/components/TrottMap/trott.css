@@ -85,6 +85,15 @@
   color: white;
 }
 
+.img-menu-no-connect {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 35px;
+  bottom: 55px;
+  z-index: 1000;
+}
+
 .bm-burger-button {
   position: absolute;
   width: 45px;
@@ -187,6 +196,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  text-align: center;
 }
 
 .menu_info_text {
@@ -331,11 +341,12 @@
 }
 
 .Text_Scan {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: -0.04rem;
+  text-align: center;
 }
 
 .QrReader section {
@@ -352,6 +363,27 @@
   border-left: 2rem solid rgba(0, 0, 0, 0.5)!important;
   box-shadow: rgba(255, 255, 255, .5) 0px 0px 0px 5px inset!important;
 }
+
+/* --------------------------- TROTT - Preview SCAN ----------------------- */
+
+.container_Content {
+  background: linear-gradient(154deg, #ff5757 0%, hsl(338, 100%, 50%) 100%);
+  font-family: "Poppins";
+  color: white;
+  text-align: center;
+}
+
+.title_troot {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.Preview_troot {
+  border-radius: 1rem;
+  border: solid 1px rgb(77, 77, 77); 
+  max-width: 50%;
+}
+
 
 /* --------------------------------------------------------------------------- */
 /* --------------------------- TROTT - Interface POPUP ----------------------- */

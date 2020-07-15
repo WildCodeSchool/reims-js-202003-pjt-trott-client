@@ -42,6 +42,7 @@ class Scan extends React.Component {
     }));
   }
 
+  
   handleScan = data => {
     if (data) {
       this.setState({
