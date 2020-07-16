@@ -83,12 +83,12 @@ class RegisterPageTwo extends React.Component {
                 onChange={this.onChange}
                 value={this.state.sponsorship}
               />
-              <input className="link_submitButton" type="submit" value="Envoyer" />
+              <input className="link_submitButton" type="submit" value="envoyer" />
             </div>
           </fieldset>
         </form>
-        <Link className="link_otherConnect" to="/register?step=3">Autres moyens de connexion</Link>
-        <Link className="Without_Connect" to="/trott">Continuez sans se connecter</Link>
+        <Link className="link_otherConnect" to="/register?step=3">autres moyens de connexion</Link>
+        <Link className="Without_Connect" to="/trott">continuez sans se connecter</Link>
       </div>
     );
   }

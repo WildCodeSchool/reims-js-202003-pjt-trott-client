@@ -23,17 +23,16 @@ const RegisterPageOne = () => {
       </div>
       <img className="imageConnect" src="https://zupimages.net/up/20/24/wkww.png" alt="PlaceHolder" />
       <Link className="link_button_register" to="/register?step=2">
-        S'inscrire
+        s'inscrire
       </Link>
       <Link className="link_button_register" to="/login">
-        Se connecter
+        se connecter
       </Link>
       <Link className="Without_Connect" to="/trott">
-        Continuer sans se connecter
+        continuer sans se connecter
       </Link>
     </div>
   );
 };
-
 
 export default RegisterPageOne;
