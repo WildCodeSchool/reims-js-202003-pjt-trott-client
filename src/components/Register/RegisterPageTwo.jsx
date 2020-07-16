@@ -9,7 +9,7 @@ class RegisterPageTwo extends React.Component {
       username: '',
       email: '',
       password: '',
-      sponshorship: '',
+      sponsorship: '',
     };
     this.onChange = this.onChange.bind(this);
     this.submitForm = this.submitForm.bind(this);
@@ -56,6 +56,7 @@ class RegisterPageTwo extends React.Component {
                 name="username"
                 onChange={this.onChange}
                 value={this.state.username}
+                required
               />
 
               <label htmlFor="email">Adresse Email</label>
@@ -65,6 +66,7 @@ class RegisterPageTwo extends React.Component {
                 name="email"
                 onChange={this.onChange}
                 value={this.state.email}
+                required
               />
 
               <label htmlFor="password">Mot de passe</label>
@@ -74,6 +76,7 @@ class RegisterPageTwo extends React.Component {
                 name="password"
                 onChange={this.onChange}
                 value={this.state.password}
+                required
               />
               <label htmlFor="sponsorship">Code Parrainage</label>
               <input
