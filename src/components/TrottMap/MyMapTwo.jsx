@@ -19,9 +19,18 @@ const createClusterCustomIcon = (cluster) => {
   if (count < 10) {
     size = 'Small';
     countMarker = count;
-  } else if (count >= 10 && count < 50) {
+  } else if (count >= 10 && count < 20) {
     size = 'Medium';
     countMarker = '10+';
+  } else if (count >= 20 && count < 50) {
+    size = 'Medium';
+    countMarker = '20+';
+  } else if (count >= 30 && count < 40) {
+    size = 'Medium';
+    countMarker = '30+';
+  } else if (count >= 40 && count < 50) {
+    size = 'Medium';
+    countMarker = '40+';
   } else if (count >= 50 && count < 500) {
     size = 'Large';
     countMarker = '50+';
