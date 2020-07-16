@@ -32,7 +32,6 @@ class Scan extends React.Component {
 
   render() {
     return (
-      <Animated animationIn="fadeInLeft" animationInDuration='500' animationOut="fadeOut" isVisible={true}>
         <div className={this.state.content == null ? 'Bg_QrCode_Reader' : 'Reader'} >
           <Link to="/trott?page=2" className='cross_style'>
             <FontAwesomeIcon icon={faTimesCircle} />
@@ -55,7 +54,6 @@ class Scan extends React.Component {
           </div>
           {this.state.content != null && <ResultScan />}
         </div>
-      </Animated>
     );
   }
 }
