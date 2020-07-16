@@ -1,0 +1,84 @@
+/* --------------------------- TROTT - Preview SCAN ----------------------- */
+.Reader{
+  background-color: gray;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+}
+
+.test {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.container_Content {
+  background: #00DD00;
+  border: white solid 2px;
+  border-radius: 1rem;
+  font-family: "Poppins";
+  color: white;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.times_style {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: hsl(338, 100%, 50%);
+}
+
+.times_style svg {
+  padding: 1px;
+  background-color: white;
+  border-radius: 50%;
+  color: #00DD00;
+}
+
+.txt_padding {
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.PoceBleu {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.title_troot {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.ctn_link_scan {
+  margin: 1rem;
+}
+
+.Preview_troot {
+  border-radius: 1rem;
+  border: solid 1px rgb(77, 77, 77); 
+  max-width: 50%;
+}
+
+.cross_style svg {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.link_unlock {
+  background-color: rgb(255, 255, 255);
+  border-radius: 39px;
+  color: #ff5757;
+  padding: 0.5rem 3rem;
+  text-decoration: none;
+}

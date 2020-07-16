@@ -24,7 +24,7 @@ function InstruPageOne() {
         </div>
       </div>
       <div className="linkButton_block">
-        <Link className="link_button" to="/instructions?page=2">Swipe</Link>
+        <Link className="link_button" to="/instructions?page=2">swipe</Link>
       </div>
     </div>
   );

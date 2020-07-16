@@ -44,7 +44,7 @@ const InstruPageTwo = () => (
       <RankStats position="6" name="Le Professeur" score="78" img="https://via.placeholder.com/50" />
     </div>
     <div className="linkButton_block">
-      <Link className="link_button" to="/register">C'est Parti</Link>
+      <Link className="link_button" to="/register">c'est parti</Link>
     </div>
   </div>
 );
