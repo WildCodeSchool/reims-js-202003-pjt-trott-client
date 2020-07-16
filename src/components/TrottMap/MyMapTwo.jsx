@@ -9,6 +9,36 @@ import L from 'leaflet';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
 import 'react-leaflet-markercluster/dist/styles.min.css';
 import PopInfo from './PopInfo';
+import trottimg from '../../Image/2.png';
+
+const createClusterCustomIcon = (cluster) => {
+  const count = cluster.getChildCount();
+  let size = 'LargeXL';
+  let countMarker = '100+';
+
+  if (count < 10) {
+    size = 'Small';
+    countMarker = count;
+  } else if (count >= 10 && count < 50) {
+    size = 'Medium';
+    countMarker = '10+';
+  } else if (count >= 50 && count < 500) {
+    size = 'Large';
+    countMarker = '50+';
+  }
+  const options = {
+    cluster: `markerCluster${size}`,
+  };
+
+  return L.divIcon({
+    html:
+      `<div class="markerClusterBlock">
+        <img src=${trottimg} alt="trott img" />
+        <span class="markerClusterLabel">${countMarker}</span>
+      </div>`,
+    className: `${options.cluster}`,
+  });
+};
 
 const Icon = (operator) => L.icon({
   iconUrl: `http://cdn.fluctuo.com/markers/${operator}.png`,
@@ -69,7 +99,7 @@ function MyMapTwo() {
           url="https://api.mapbox.com/styles/v1/brianlag/ckbrnsqyh327j1iloa35gzxos/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYnJpYW5sYWciLCJhIjoiY2ticmx5anhtMnhzMjJ4bDluM2N3dzJxMSJ9.3ynE8Sf5t0N7PdHaZukyDw"
         />
         {data && Object.keys(data).map((provider) => (
-          <MarkerClusterGroup>
+          <MarkerClusterGroup iconCreateFunction={createClusterCustomIcon}>
             {data[provider].map((vehicle) => (
               <Marker position={[vehicle.lat, vehicle.lng]} icon={Icon(vehicle.provider.slug)}>
                 <Popup>
