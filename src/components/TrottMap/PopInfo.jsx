@@ -9,7 +9,9 @@ function PopInfo(props) {
           <img className="pop-trott_img" src="https://media.cdnws.com/_i/21277/cs400-2906/724/10/speedway-4-trottinette-electrique-puissante.png" alt="" />
         </div>
         <div className="popup_text-info">
-          <p className="trott_id">{props.vehicle.publicId}</p>
+          {props.vehicle.publicId === null
+            ? <p className="trott_id">{props.vehicle.provider.name}</p>
+            : <p className="trott_id">`${props.vehicle.provider.name} n°{props.vehicle.publicId}`</p>}
           <div className="block_trott-info">
             <div className="block_column-img">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
