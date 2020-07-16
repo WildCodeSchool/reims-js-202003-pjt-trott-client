@@ -80,8 +80,8 @@ function Burger(props) {
           Environnement
         </div>
         <div className="user_list">
-          <Link to="/register">
-            <button className="user-login-register" type="button">S'inscrire /Se connecter</button>
+          <Link to="/register" className="user-login-register">
+            s'inscrire /se connecter
           </Link>
         </div>
       </Menu>
