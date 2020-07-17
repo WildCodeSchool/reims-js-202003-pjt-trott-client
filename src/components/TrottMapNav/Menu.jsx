@@ -15,7 +15,6 @@ const mapStateToProps = (state) => ({
 
 function Burger(props) {
   const notify = () => toast.info('Tu dois être connecté pour ouvrir le menu !');
-
   if (props.token !== null) {
     return (
       <Menu width="100vw" customBurgerIcon={<img src={BurgerMenu} alt="icon" />} className="size">

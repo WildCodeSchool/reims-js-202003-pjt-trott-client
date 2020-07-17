@@ -30,7 +30,7 @@ class Filter extends React.Component {
 
     return (
       <>
-        <Menu right width="100vw" customBurgerIcon={<img src={Slider} style="width: 60%; height: 100%;" alt="icon" />} className="size" burgerButtonClassName="button_position" itemClassName="filter_item">
+        <Menu right width="100vw" customBurgerIcon={<img src={Slider} alt="icon" />} className="size" burgerButtonClassName="button_position" itemClassName="filter_item">
           <Select
             value={selectedOption}
             onChange={this.handleChange}

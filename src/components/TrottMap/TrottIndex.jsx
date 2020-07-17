@@ -7,7 +7,6 @@ import MyCity from './MyCity';
 import Burger from '../TrottMapNav/Menu';
 import ScanLink from '../TrottMapNav/ScanLink';
 import Filter from '../TrottMapNav/Filter';
-
 import './trott.css';
 
 const client = new ApolloClient({
@@ -33,9 +32,7 @@ function TrottIndex() {
     case 2:
       return (
         <ApolloProvider client={client}>
-          <Burger />
-          <ScanLink />
-          <Filter />
+          <TrottNavMap />
           <MyMapTwo />
         </ApolloProvider>
       );
