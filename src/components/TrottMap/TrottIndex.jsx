@@ -4,13 +4,10 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
 
 import MyCity from './MyCity';
-import Burger from './Menu';
-import MyMap from './MyMap';
-import ScanLink from '../ScanPage/ScanLink';
-import Filter from './Filter';
 
 import './trott.css';
 import MyMapTwo from './MyMapTwo';
+import TrottNavMap from '../TrottMapNav/TrottNavMap';
 
 const client = new ApolloClient({
   uri: 'https://flow-api.fluctuo.com/v1?access_token=g8bGqo424KsGKVRw8wxOZ7oGdWmM4lyL',
@@ -35,9 +32,7 @@ function TrottIndex() {
     case 2:
       return (
         <ApolloProvider client={client}>
-          <Burger />
-          <ScanLink />
-          <Filter />
+          <TrottNavMap />
           <MyMapTwo />
         </ApolloProvider>
       );

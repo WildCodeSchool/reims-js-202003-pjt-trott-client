@@ -297,40 +297,13 @@
   color: white;
   border-radius: 0 0 1rem 1rem;
 }
+
 /* --------------------------------------------------------------------------- */
 /* ---------------------------- TROTT - Interface MAP ------------------------ */
 /* --------------------------------------------------------------------------- */
 
 .map {
   height: 100vh;
-}
-
-.ScanLogo {
-  position: absolute;
-  top: 700px;
-  left: 145px;
-  margin: auto;
-  z-index: 1001;
-}
-
-.Text_Scan {
-  font-family: "Poppins";
-  font-weight: 1000;
-  margin: 0;
-  padding: 0;
-  color: black;
-}
-
-.Text_Scan:link {
-  text-decoration: none;
-}
-
-.Text_Scan:visited {
-  text-decoration: none;
-}
-
-.Text_Scan:active {
-  text-decoration: none;
 }
 
 .leaflet-marker-icon {
@@ -400,47 +373,9 @@
   margin-right: 0.6rem;
 }
 
-/* --------------------------------------------------------------------------- */ 
-/* ---------------------------- TROTT - Interface MAP ------------------------ */
-/* --------------------------------------------------------------------------- */
-
-.map {
-  height: 100vh;
-}
-
-.ScanLogo {
-  position: absolute;
-  top: 700px;
-  left: 145px;
-  margin: auto;
-  z-index: 1001;
-}
-
-.Text_Scan {
-  font-family: "Poppins";
-  font-weight: 1000;
-  margin: 0;
-  padding: 0;
-  color: black;
-  text-align: center;
-}
-
-.Text_Scan:link {
-  text-decoration: none;
-}
-
-.Text_Scan:visited {
-  text-decoration: none;
-}
-
-.Text_Scan:active {
-  text-decoration: none;
-}
-
 /* --------------------------------------------------------------------------- */
 /* ---------------------------- TROTT - Interface SCAN ------------------------ */
 /* --------------------------------------------------------------------------- */
-
 
 .Bg_QrCode_Reader {
   background-color: gray;
@@ -465,7 +400,6 @@
 .logo_trott_2 {
   max-width: 11vw;
 }
-
 
 .Title_Scan {
   color: white;
@@ -515,7 +449,6 @@
   padding: 0.5rem;
   color: hsl(338, 100%, 50%);
 }
-
 
 /* --------------------------------------------------------------------------- */
 /* --------------------------- TROTT - Interface POPUP ----------------------- */

@@ -7,7 +7,7 @@
   z-index: 0;
 }
 
-.test {
+.ctn_animated {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -16,7 +16,7 @@
 }
 
 .container_Content {
-  background: #00DD00;
+  background: #00113D;
   border: white solid 2px;
   border-radius: 1rem;
   font-family: "Poppins";
@@ -25,7 +25,7 @@
   z-index: 2;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-60%);
   text-align: center;
 }
 
@@ -39,15 +39,14 @@
 
 .times_style svg {
   padding: 1px;
-  background-color: white;
   border-radius: 50%;
-  color: #00DD00;
+  color: #ffffff;
 }
 
 .txt_padding {
   line-height: 1.5rem;
   font-size: 1.5rem;
-  margin: 1rem;
+  margin: 2rem;
 }
 
 .PoceBleu {
@@ -61,7 +60,7 @@
 }
 
 .ctn_link_scan {
-  margin: 1rem;
+  margin: 1.5rem;
 }
 
 .Preview_troot {
@@ -76,9 +75,9 @@
 }
 
 .link_unlock {
-  background-color: rgb(255, 255, 255);
+  background-color: #6BD0AF;
   border-radius: 39px;
-  color: #ff5757;
-  padding: 0.5rem 3rem;
+  color: black;
+  padding: 0.5rem 2rem;
   text-decoration: none;
 }

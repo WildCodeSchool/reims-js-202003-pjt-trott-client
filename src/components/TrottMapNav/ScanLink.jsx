@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import ScanLogo from '../../Image/Logos_trott_1_.png';
 
+import './TrottNavMap.css'
+
 const ScanLink = () => (
   <div className="ScanLogo">
     <Link to="/scan">
