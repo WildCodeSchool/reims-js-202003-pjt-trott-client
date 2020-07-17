@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import { ToastContainer, toast } from 'react-toastify';
 import User from '../../Image/user.png';
 import Gift from '../../Image/gift.png';
-import BurgerMenu from '../../Image/menu.png';
+import BurgerMenu from '../../Image/menu_icon3x.png';
 import Tree from '../../Image/tree2x.png';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -93,10 +93,3 @@ function Burger(props) {
 }
 
 export default connect(mapStateToProps)(Burger);
-
-/*
-<Link to="/register">
-        <button type="button">se connecter</button>
-      </Link>
-      <img className="img-menu-no-connect" onClick={notify} src={BurgerMenu} alt="notify" />
-      <ToastContainer /> */
