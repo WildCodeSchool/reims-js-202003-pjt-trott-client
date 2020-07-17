@@ -56,8 +56,8 @@ const MyIcon = L.icon({
 });
 
 const Icon = (operator) => L.icon({
-  iconUrl: `http://cdn.fluctuo.com/markers/${operator}.png`,
-  iconAnchor: [12.5, 41],
+  iconUrl: `http://cdn.fluctuo.com/markers/${operator}-2x.png`,
+  iconSize: [30, 50],
   popupAnchor: [0, -41],
 });
 

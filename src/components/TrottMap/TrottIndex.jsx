@@ -2,12 +2,12 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/react-hooks';
 import ApolloClient from 'apollo-boost';
-
-import MyCity from './MyCity';
-
-import './trott.css';
 import MyMapTwo from './MyMapTwo';
-import TrottNavMap from '../TrottMapNav/TrottNavMap';
+import MyCity from './MyCity';
+import Burger from '../TrottMapNav/Menu';
+import ScanLink from '../TrottMapNav/ScanLink';
+import Filter from '../TrottMapNav/Filter';
+import './trott.css';
 
 const client = new ApolloClient({
   uri: 'https://flow-api.fluctuo.com/v1?access_token=g8bGqo424KsGKVRw8wxOZ7oGdWmM4lyL',

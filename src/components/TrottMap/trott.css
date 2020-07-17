@@ -247,6 +247,21 @@
   border-radius: 20px 0 0 0;
 }
 
+
+.menuImage{
+  width: 1.5rem
+}
+
+.bm-icon{
+background-color: white;
+border-radius: 50%;
+box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+padding: 0.5rem;
+width: 70% !important;
+height: 70% !important;
+}
+
+
 /* --------------------------------------------------------------------------- */
 /* --------------------------- TROTT - Menu Filter ----------------------- */
 /* --------------------------------------------------------------------------- */
@@ -548,3 +563,40 @@
   background: #ff6464;
 }
 
+/* --------------------------------------------------------------------------- */
+/* -------------------------TROTT - Interface TrottNavMap -------------------- */
+/* --------------------------------------------------------------------------- */
+
+.ScanLogo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  font-weight: 1000;
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-align: center;
+  z-index: 1500;
+}
+
+.Text_Scan {
+  font-family: "Poppins";
+  font-weight: 1000;
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-align: center;
+}
+
+.Text_Scan:link {
+  text-decoration: none;
+}
+
+.Text_Scan:visited {
+  text-decoration: none;
+}
+
+.Text_Scan:active {
+  text-decoration: none;
+}

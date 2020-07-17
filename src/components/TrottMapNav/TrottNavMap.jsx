@@ -1,5 +1,4 @@
 import React from "react";
-
 import Menu from "./Menu";
 import ScanLink from "./ScanLink";
 import Filter from "./Filter";

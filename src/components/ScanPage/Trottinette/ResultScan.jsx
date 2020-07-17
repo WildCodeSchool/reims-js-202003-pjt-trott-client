@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Animated } from "react-animated-css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 import './ResultScan.css';
 
@@ -16,7 +16,7 @@ const ResultScan = () => (
       <p className='txt_padding'>Tu veux pouvoir déverrouiller leurs trottinettes sur notre app ? Alors appuies sur le poce bleu !</p>
       <p className='PoceBleu'>#PoceBleu</p>
       <div className='ctn_link_scan'>
-        <Link to="/register" className='link_unlock'>dévérouillez</Link>
+        <Link to="/trott?page=2" className='link_unlock'>retour</Link>
       </div>
     </div>
   </Animated>

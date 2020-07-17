@@ -2,7 +2,7 @@
 import React from 'react';
 import Select from 'react-select';
 import { slide as Menu } from 'react-burger-menu';
-import Slider from '../../Image/slider.png';
+import Slider from '../../Image/sliders.svg3x.png';
 
 const options = [
   { value: 'la + d\'autonomie', label: 'la + d\'autonomie' },

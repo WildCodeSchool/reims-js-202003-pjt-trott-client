@@ -11,7 +11,7 @@ function PopInfo(props) {
         <div className="popup_text-info">
           {props.vehicle.publicId === null
             ? <p className="trott_id">{props.vehicle.provider.name}</p>
-            : <p className="trott_id">`${props.vehicle.provider.name} n°{props.vehicle.publicId}`</p>}
+            : <p className="trott_id">{props.vehicle.provider.name} n°{props.vehicle.publicId}</p>}
           <div className="block_trott-info">
             <div className="block_column-img">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
