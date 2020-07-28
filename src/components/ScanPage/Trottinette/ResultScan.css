@@ -27,6 +27,8 @@
   left: 50%;
   transform: translate(-50%,-60%);
   text-align: center;
+  width: 78vw;
+  height: 68vh;
 }
 
 .times_style {
@@ -60,7 +62,7 @@
 }
 
 .ctn_link_scan {
-  margin: 1.5rem;
+  margin: 4rem;
 }
 
 .Preview_troot {

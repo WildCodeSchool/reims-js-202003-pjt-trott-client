@@ -577,7 +577,7 @@ height: 70% !important;
   padding: 0;
   color: black;
   text-align: center;
-  z-index: 1500;
+  z-index: 1000;
 }
 
 .Text_Scan {

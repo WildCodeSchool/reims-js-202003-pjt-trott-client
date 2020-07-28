@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { Animated } from "react-animated-css";
 import QrReader from "react-qr-reader";
 import ResultScan from "./Trottinette/ResultScan";
 
 import '../TrottMap/trott.css'
 
-import code from '../../Image/qr-code_logo.svg'
+import code from '../../Image/qr-code_logo.svg';
+import UnlockTrott from "./Trottinette/UnlockTrott";
 
 class Scan extends React.Component {
   constructor(props) {
@@ -52,7 +53,7 @@ class Scan extends React.Component {
               style={{ width: "100%" }}
             />
           </div>
-          {this.state.content != null && <ResultScan />}
+          {this.state.content != null && <UnlockTrott />}
         </div>
     );
   }
