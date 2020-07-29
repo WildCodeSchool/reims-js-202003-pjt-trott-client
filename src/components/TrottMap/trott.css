@@ -600,3 +600,9 @@ height: 70% !important;
 .Text_Scan:active {
   text-decoration: none;
 }
+
+
+
+.leaflet-container a.leaflet-popup-close-button{
+  color: #ffff;
+}
